@@ -11,9 +11,13 @@ description: A little bit about the site
         alt="About image"
         class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
 
-    <p class="mb-6">This is where you can give a little more information about yourself or site. If you'd like to change the structure of this page, you can find the file at <code>source/about.blade.php</code></p>
-
-    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum officia dolorem accusantium veniam quae, possimus, temporibus explicabo magni voluptas. fugit natus deserunt atque veniam possimus earum harum itaque est!</p>
-
-    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum officia dolorem accusantium veniam quae, possimus, temporibus explicabo magni voluptas. fugit natus deserunt atque veniam!</p>
+    <div class="content">
+        <p>Adam is a Software Developer who lives in Vancouver, Washington. He writes code in PHP and
+            JavaScript. Adam has been building software professionally since 2015.</p>
+        <p>The allure in creating software comes from the allure of creation! In addition to his interest in
+            building software, He has a wood shop in his garage, where he makes everything from drumsticks to
+            toy clocks, and has been a professional musician for 30 years, playing drums for bands of all
+            styles from Jazz to Metal. Adam is also a father to 2 wonderful boys!</p>
+        <p>You may contact Adam via the links in the footer of this portfolio!</p>
+    </div>
 @endsection

@@ -24,6 +24,9 @@ return [
                 });
             },
         ],
+        'projects' => [
+            'path' => 'projects',
+        ]
     ],
 
     // helpers
