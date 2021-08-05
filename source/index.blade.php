@@ -2,8 +2,8 @@
 
 @section('body')
 
-    <section id="container-center" class="column center flex-1">
-        <h1 class="page-title">Hi! I'm Adam Bailey</h1>
+    <section class="column center flex-1">
+        <h1>Hi! I'm Adam Bailey</h1>
         <div class="content">
             <h3>I'm a Software Developer</h3>
 
