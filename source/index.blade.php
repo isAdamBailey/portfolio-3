@@ -5,7 +5,12 @@
     <section class="column center flex-1">
         <h1>Hi! I'm Adam Bailey</h1>
         <div class="content">
-            <h3>I'm a Software Developer</h3>
+            <h3>
+                I'm a Software Developer with {{ date('Y') - '2015' }} years of experience in
+                <span id="vue-typing-text">
+                    <typing-text :words="['Laravel.', 'PHP.', 'Javascript.', 'Vue.']"></typing-text>
+                </span>
+            </h3>
 
             <div class="flex justify-center">
                 <a href="https://drive.google.com/open?id=1uPXrHJ42H8d4Um-2cXLfA2e7t32GZFI6">

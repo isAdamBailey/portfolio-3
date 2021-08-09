@@ -1,6 +1,7 @@
 window.axios = require('axios');
 import Vue from 'vue';
 import Search from './components/Search.vue';
+import TypingText from './components/TypingText.vue';
 import hljs from 'highlight.js/lib/core';
 
 // Syntax highlighting
@@ -21,8 +22,11 @@ document.querySelectorAll('pre code').forEach((block) => {
 Vue.config.productionTip = false;
 
 new Vue({
-    components: {
-        Search,
-    },
+    components: {Search},
 }).$mount('#vue-search');
 
+if(document.querySelector('#vue-typing-text')){
+    new Vue({
+        components: {TypingText},
+    }).$mount('#vue-typing-text');
+}
