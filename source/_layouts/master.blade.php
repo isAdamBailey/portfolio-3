@@ -23,6 +23,15 @@
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        <script>
+            //handle theme, respecting prefers-color-scheme
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+        </script>
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 leading-normal font-sans">
@@ -40,6 +49,8 @@
                     <search></search>
 
                     @include('_nav.menu')
+
+                    @include('_nav.theme-toggle')
 
                     @include('_nav.menu-toggle')
                 </div>
