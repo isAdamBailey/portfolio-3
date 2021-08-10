@@ -4,7 +4,7 @@ section: content
 title: Generators In PHP
 date: 2020-06-05
 description: Get up and running with generators in PHP.
-categories: [configuration]
+categories: [configuration, learning]
 featured: true
 excerpt: Get up and running with generators in PHP.
 ---

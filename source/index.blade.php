@@ -19,8 +19,8 @@
             </div>
 
             <h2 class="mt-12">Projects</h2>
-            <p class="text-copy-primary">While most of my best work was done in private repositories, Here are some examples
-                of open source projects ive worked on.</p>
+            <p class="text-copy-primary">While the vast majority of my best work was done in private repositories,
+                Here are some examples of open source projects ive worked on.</p>
             <div class="posts flex justify-center flex-wrap">
                 @foreach ($projects as $project)
                     <div class="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg m-4 bg-background-card">
@@ -49,7 +49,7 @@
     <h2 class="mt-12">Featured Blog Posts</h2>
     @foreach ($posts->where('featured', true) as $featuredPost)
         <div class="w-full mb-6">
-            <p class="text-gray-700 font-medium my-2">
+            <p class="text-gray-700 dark:text-gray-100 font-medium my-2">
                 {{ $featuredPost->getDate()->format('F j, Y') }}
             </p>
 

@@ -5,7 +5,7 @@ title: Dockerize A Laravel Application
 date: 2020-05-20
 description: What I did to serve a laravel application with docker containers.
 featured: true
-categories: [configuration, feature]
+categories: [configuration, learning]
 ---
 
 What I did to serve a laravel application with docker containers.

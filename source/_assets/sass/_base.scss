@@ -24,7 +24,7 @@ blockquote {
 }
 
 code {
-    @apply bg-gray-300;
+    @apply bg-gray-300 dark:bg-gray-900;
     @apply px-2;
     @apply py-px;
     @apply rounded;
@@ -32,7 +32,7 @@ code {
 }
 
 code.hljs {
-    @apply bg-transparent;
+    @apply bg-transparent dark:bg-gray-900;
     @apply p-0;
 
     .hljs-comment,
@@ -40,6 +40,67 @@ code.hljs {
     .hljs-meta {
         @apply font-normal;
         @apply not-italic;
+    }
+
+    .hljs-built_in,
+    .hljs-selector-tag,
+    .hljs-section,
+    .hljs-link {
+        @apply dark:text-blue-400
+    }
+
+    .hljs-keyword {
+        @apply dark:text-pink-600
+    }
+
+    .hljs,
+    .hljs-subst {
+        @apply dark:text-gray-200
+    }
+
+    .hljs-title {
+        @apply dark:text-green-300
+    }
+
+    .hljs-string,
+    .hljs-meta,
+    .hljs-name,
+    .hljs-type,
+    .hljs-attr,
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-addition,
+    .hljs-variable,
+    .hljs-template-tag,
+    .hljs-template-variable {
+        @apply dark:text-yellow-300
+    }
+
+    .hljs-comment,
+    .hljs-quote,
+    .hljs-deletion {
+        @apply dark:text-purple-700
+    }
+
+    .hljs-keyword,
+    .hljs-selector-tag,
+    .hljs-literal,
+    .hljs-title,
+    .hljs-section,
+    .hljs-doctag,
+    .hljs-type,
+    .hljs-name,
+    .hljs-strong {
+        font-weight: bold;
+    }
+
+    .hljs-literal,
+    .hljs-number {
+        @apply dark:text-purple-500
+    }
+
+    .hljs-emphasis {
+        font-style: italic;
     }
 }
 
@@ -125,7 +186,7 @@ p {
 }
 
 pre {
-    @apply bg-gray-200;
+    @apply bg-gray-200 dark:bg-gray-900;
     @apply leading-loose;
     @apply my-6;
     @apply overflow-x-auto;
@@ -135,6 +196,7 @@ pre {
     @apply text-base;
 
     code {
+        @apply dark:text-gray-100;
         @apply bg-transparent;
         @apply block;
         @apply p-0;
