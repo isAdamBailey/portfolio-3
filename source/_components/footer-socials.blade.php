@@ -15,7 +15,7 @@
             >
                 <use
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="./assets/img/icons.svg#icon-twitter"
+                    xlink:href="/assets/img/icons.svg#icon-twitter"
                 />
             </svg>
         </a>
@@ -36,7 +36,7 @@
             >
                 <use
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="./assets/img/icons.svg#icon-github"
+                    xlink:href="/assets/img/icons.svg#icon-github"
                 />
             </svg>
         </a>
@@ -57,7 +57,7 @@
             >
                 <use
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="./assets/img/icons.svg#icon-linkedin"
+                    xlink:href="/assets/img/icons.svg#icon-linkedin"
                 />
             </svg>
         </a>
@@ -78,7 +78,7 @@
             >
                 <use
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="./assets/img/icons.svg#icon-email"
+                    xlink:href="/assets/img/icons.svg#icon-email"
                 />
             </svg>
         </a>
