@@ -49,15 +49,17 @@
     <h2 class="mt-12">Featured Blog Posts</h2>
     @foreach ($posts->where('featured', true) as $featuredPost)
         <div class="w-full mb-6">
-            <p class="text-gray-700 dark:text-gray-100 font-medium my-2">
-                {{ $featuredPost->getDate()->format('F j, Y') }}
-            </p>
+            <div class="flex justify-between">
+                <h2 class="text-3xl mt-0">
+                    <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
+                        {{ $featuredPost->title }}
+                    </a>
+                </h2>
 
-            <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
-                    {{ $featuredPost->title }}
-                </a>
-            </h2>
+                <p class="text-gray-700 dark:text-gray-100 font-medium my-2">
+                    {{ $featuredPost->getDate()->format('F j, Y') }}
+                </p>
+            </div>
 
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
