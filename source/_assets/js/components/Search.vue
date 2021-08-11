@@ -31,7 +31,7 @@
                     <div class="flex flex-col bg-white border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-lg mx-4 md:mx-0">
                         <a
                             v-for="(result, index) in results"
-                            class="bg-white hover:bg-blue-100 border-b border-blue-400 text-xl cursor-pointer p-4"
+                            class="bg-white hover:bg-blue-100 dark:hover:text-gray-700 border-b border-blue-400 text-xl dark:text-gray-700 cursor-pointer p-4"
                             :class="{ 'rounded-b-lg': (index === results.length - 1) }"
                             :href="result.item.link"
                             :title="result.item.title"
@@ -96,7 +96,7 @@ export default {
     created() {
         axios('/index.json').then(response => {
             this.fuse = new Fuse(response.data, {
-                minMatchCharLength: 6,
+                minMatchCharLength: 3,
                 keys: ['title', 'snippet', 'categories'],
             });
         });
