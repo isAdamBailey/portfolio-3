@@ -25,6 +25,10 @@
 
     <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
         @yield('content')
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">
+            Tweet
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
     <nav class="flex justify-between text-sm md:text-base">
