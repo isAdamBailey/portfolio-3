@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => 'https://adambailey.io',
+    'baseUrl' => '',
     'production' => false,
     'siteName' => 'Adam Bailey',
     'siteDescription' => 'Personal web portfolio for Adam Bailey',

@@ -44,6 +44,10 @@
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 leading-normal font-sans">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="dzqKhQvS"></script>
+
         <header class="flex items-center shadow bg-white dark:bg-gray-800 border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
