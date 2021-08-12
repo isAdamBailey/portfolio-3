@@ -7,6 +7,7 @@ return [
     'production' => false,
     'siteName' => 'Adam Bailey',
     'siteDescription' => 'Personal web portfolio for Adam Bailey',
+    'siteKeywords' => 'adam bailey, html, css, javascript, vue, laravel, jamstack, markdown, tailwind, web developer, software developer',
     'siteAuthor' => 'Adam Bailey',
 
     // collections
