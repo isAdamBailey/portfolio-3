@@ -15,7 +15,7 @@
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
-        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.png">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         @if ($page->production)
@@ -30,7 +30,9 @@
             </script>
         @endif
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         <script>
@@ -45,16 +47,15 @@
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 leading-normal font-sans">
 
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="dzqKhQvS"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="dzqKhQvS"></script>
 
         <header class="flex items-center shadow bg-white dark:bg-gray-800 border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
-
-                        <h1 class="text-lg md:text-2xl text-blue-800 dark:text-blue-300 font-semibold hover:text-blue-600 dark:hover:text-blue-100 my-0">{{ $page->siteName }}</h1>
+                    <a href="/" title="{{ $page->siteName }} home">
+                        <img class="md:h-64 hidden dark:block" src="/assets/img/logo-dark-theme.png" alt="{{ $page->siteName }} logo" />
+                        <img class="md:h-64 dark:hidden" src="/assets/img/logo-light-theme.png" alt="{{ $page->siteName }} logo" />
                     </a>
                 </div>
 

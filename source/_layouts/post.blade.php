@@ -23,7 +23,8 @@
         @endforeach
     @endif
 
-    <div class="flex justify-start items-center space-x-3 mt-7">
+    <div class="flex justify-start items-end space-x-3 mt-7">
+        <h5 class="mb-0">Share:</h5>
         <div>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">
                 Tweet

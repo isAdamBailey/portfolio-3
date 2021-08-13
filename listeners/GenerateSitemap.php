@@ -11,6 +11,7 @@ class GenerateSitemap
     protected $exclude = [
         '/assets/*',
         '*/favicon.ico',
+        '*/favicon.png',
         '*/404*'
     ];
 

@@ -138,7 +138,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          'Nunito Sans'
+          'Roboto, Sans'
         ],
         mono: [
           'monospace',
@@ -177,7 +177,10 @@ module.exports = {
   variants: {
     borderRadius: ['responsive', 'focus'],
     borderWidth: ['responsive', 'active', 'focus'],
-    width: ['responsive', 'focus']
+    width: ['responsive', 'focus'],
+    extend: {
+      display: ['dark']
+    },
   },
   plugins: [
     function({ addUtilities }) {
