@@ -1,10 +1,14 @@
 .nav-menu {
+    @apply absolute;
+    top: theme('spacing.24');
     @apply bg-gray-200 dark:bg-gray-700;
+    @apply inset-x-0;
     @apply pb-2;
     @apply pt-6;
     @apply px-2;
     @apply shadow;
     @apply w-auto;
+    @apply border-b-2;
 }
 
 .nav-menu__item {
