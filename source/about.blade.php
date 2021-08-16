@@ -25,5 +25,7 @@ description: A little bit about the site
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         <p>You may also creep around Adam's social media, or contact him via the links in the footer of this portfolio!</p>
+
+        @include('_components.rick-roll-egg')
     </div>
 @endsection
