@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Generators In PHP
-date: 2020-06-05
+date: 2021-08-10
 description: Get up and running with generators in PHP.
 categories: [configuration, learning]
 featured: true
@@ -33,7 +33,7 @@ users in Laravel using a factory:
 factory(App\User::class, 1000000)->create();
 ```       
 
-You'd run out of memory pretty quick. There are ways we can try to handle this, for instance using chunk(), but that 
+You'd run out of memory pretty quick. There are ways we can try to handle this, for instance using `chunk()`, but that 
 would still load records into memory, even if the usage has been reduced.
 
 ## Generators To The Rescue!
@@ -69,7 +69,7 @@ first iteration with `$user->current();`, the User gets returned and is persiste
 $user->next() 
 ```    
 
-Great! Now if we run this generator in a foreach(), we'll see them populate the database without anything in memory:
+Great! Now if we run this generator in a `foreach()`, we'll see them populate the database without anything in memory:
 
 ```php
 foreach (generateUsers(1000000) as $user) {

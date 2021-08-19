@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Dockerize A Laravel Application
-date: 2020-05-20
+date: 2021-08-20
 description: What I did to serve a laravel application with docker containers.
 featured: true
 categories: [configuration, learning]
@@ -14,7 +14,7 @@ What I did to serve a laravel application with docker containers.
 
 I know that some of you have installed versions of mysql / php / whatever on your local pc to develop an application, only to need to use a different version for your application at work, or pulling in open source code that yet requires another version of something. Putting the app into docker containers allows me to easily switch between environments.
 
-Creating this blog post is my way of remembering how i did it so i can do it again!
+Creating this blog post is my way of remembering how I did it so I can do it again!
 
 ## Install Docker
 
@@ -22,7 +22,7 @@ This post assumes you have installed Docker Desktop for your machine, [https://w
 
 ## Install Your Laravel Application
 
-If you don't already have an application you'd like to dockerize, go ahead and install a fresh version of Laravel just like normal. [https://laravel.com/docs/installation](https://laravel.com/docs/installation "https://laravel.com/docs/installation")
+If you don't already have an application you'd like to "dockerize", go ahead and install a fresh version of Laravel just like normal. [https://laravel.com/docs/installation](https://laravel.com/docs/installation "https://laravel.com/docs/installation")
 
 ## Dockerfile
 
@@ -33,7 +33,7 @@ Create a "docker" directory in the root of your application `mkdir docker` and a
 Our dockerfile is using the [official php image](https://hub.docker.com/_/php) from Docker Hub. Copy the code below and paste it in your new Dockerfile.
 
 ```bash
-FROM php:7.4-fpm
+FROM php:8.0-fpm
 
 # Arguments defined in docker-compose.yml
 ARG user
@@ -69,7 +69,7 @@ WORKDIR /var/www
 USER $user
 ```
 
-Our Dockerfile starts by defining the base image we’re using: php:7.4-fpm.
+Our Dockerfile starts by defining the base image we’re using: php:8.0-fpm.
 
 After installing system packages and PHP extensions, we install Composer by copying the composer executable from its latest [official image](https://hub.docker.com/_/composer) to our own application image.
 
