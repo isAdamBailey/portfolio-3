@@ -4,6 +4,7 @@
             href="https://twitter.com/isAdamBailey"
             aria-label="twitter"
             target="_blank"
+            rel="noreferrer"
         >
             <svg
                 class="block"
@@ -25,6 +26,7 @@
             href="https://github.com/isAdamBailey"
             aria-label="github"
             target="_blank"
+            rel="noreferrer"
         >
             <svg
                 class="block"
@@ -46,6 +48,7 @@
             href="https://www.linkedin.com/in/adambailey2/"
             aria-label="linkedin"
             target="_blank"
+            rel="noreferrer"
         >
             <svg
                 class="block"
@@ -67,6 +70,7 @@
             href="mailto:adam@adambailey.io"
             aria-label="email"
             target="_blank"
+            rel="noreferrer"
         >
             <svg
                 class="block"
