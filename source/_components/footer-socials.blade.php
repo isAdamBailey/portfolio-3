@@ -22,7 +22,7 @@
     </li>
     <li class="ml-4">
         <a
-            href="https://github.com/Owlnofeathers"
+            href="https://github.com/isAdamBailey"
             aria-label="github"
             target="_blank"
         >
