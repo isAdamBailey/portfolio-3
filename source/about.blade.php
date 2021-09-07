@@ -15,14 +15,15 @@ description: A little bit about the site
         <p>The allure in creating software comes from the allure of creation! In addition to his interest in
             building software, He has a wood shop in his garage, where he makes everything from drumsticks to
             toy clocks, and has been a professional musician for over 30 years, playing drums for bands of all
-            styles from Jazz to Metal to Punk Rock. Adam is also a father to 2 wonderful boys!</p>
-        <p>Adam is <a href="https://autisticadvocacy.org/about-asan/about-autism/">neurodiverse</a>,
-            believes that different brains can often be very powerful, and is always interested
-            in ways the web can help those with disabilities. Please let me know if something on this site is not
-            accessible for you.</p>
+            styles from Jazz to Metal to Punk Rock.</p>
+        <p>Adam is a father to a child heavily impacted by disability, and with the goal of creating a world where his
+            disabilities can be accepted, Adam has embraced his own <a href="https://autisticadvocacy.org/about-asan/about-autism/">neurodiversity</a>,
+            to show that people with mental disability can be relatively happy and successful contributors to society.
+            Different brains can often be very powerful, and Adam is always interested in ways the web can help those with disabilities.
+            Please let me know if something on this site is not accessible for you.</p>
 
         <p class="border-t pt-10">Follow Adam on Twitter, where you'll mostly see pictures of records,
-            some talk about mental health, and praise for PHP!</p>
+            rants about Autism, and praise for PHP.</p>
         <a href="https://twitter.com/isAdamBailey?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
             Follow @isAdamBailey
         </a>
