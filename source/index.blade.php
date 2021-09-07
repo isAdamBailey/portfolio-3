@@ -13,7 +13,7 @@
             </h2>
 
             <div class="flex justify-center">
-                <a href="https://drive.google.com/open?id=1uPXrHJ42H8d4Um-2cXLfA2e7t32GZFI6">
+                <a href="https://docs.google.com/document/d/11USW6aV671jQQfOKpp_hleF8B5f4g6QFaGCkcbuwBz8/">
                     <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Open My Resume!</button>
                 </a>
             </div>
