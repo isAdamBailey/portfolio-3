@@ -5,16 +5,16 @@
     <section class="column center flex-1">
         <h1>Hi! I'm Adam Bailey</h1>
         <div class="content">
-            <h3>
+            <h2>
                 I'm a Software Developer working in
                 <span id="vue-typing-text">
                     <typing-text :words="['Laravel.', 'PHP.', 'Javascript.', 'Vue.']"></typing-text>
                 </span>
-            </h3>
+            </h2>
 
             <div class="flex justify-center">
                 <a href="https://drive.google.com/open?id=1uPXrHJ42H8d4Um-2cXLfA2e7t32GZFI6">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Open My Resume!</button>
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Open My Resume!</button>
                 </a>
             </div>
 
@@ -31,11 +31,11 @@
                         <div class="justify-around inline-flex pb-4">
                             @if($project->siteLink)
                                 <a href="{{ $project->siteLink }}">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Live Site</button>
+                                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Live Site</button>
                                 </a>
                             @endif
                             <a href="{{ $project->github }}">
-                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Github</button>
+                                <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Github</button>
                             </a>
                         </div>
                     </div>
