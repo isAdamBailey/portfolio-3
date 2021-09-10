@@ -3,3 +3,4 @@
 /vendor/
 .DS_Store
 .idea/
+/torchlight_cache/

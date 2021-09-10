@@ -2,7 +2,7 @@
     <img id="egg-image" class="my-5 hidden" src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="rick rolled">
 </div>
 <small id="egg-text">
-    Now, if you've actually read this far, if you are on a desktop computer, <strong>type the word "adam"</strong>
+    If you've actually read this far, and you are on a desktop computer, <strong>type the word "adam"</strong>
     and see what happens!
 </small>
 

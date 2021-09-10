@@ -4,7 +4,7 @@ This is my personal web portfolio, which contains all open source projects and a
 This site was made with:
 - [Jigsaw](http://jigsaw.tighten.co/), a framework for rapidly building static sites.
 - [Tailwind CSS](https://tailwindcss.com/), a utility CSS framework.
-- Syntax highlighting using [highlight.js](https://highlightjs.org/).
+- Syntax highlighting using [Torchlight](hhttps://torchlight.dev/).
 
 ### Development
 
