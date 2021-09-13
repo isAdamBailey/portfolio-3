@@ -27,6 +27,9 @@ return [
         ],
         'projects' => [
             'path' => 'projects',
+        ],
+        'links' => [
+            'path' => 'links'
         ]
     ],
 
