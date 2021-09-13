@@ -11,7 +11,6 @@ module.exports = {
     options: {
       safelist: [
         /language/,
-        /hljs/,
         /mce/,
       ],
     },
