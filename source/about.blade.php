@@ -1,6 +1,6 @@
 ---
 title: About
-description: A little bit about the site
+description: A little bit of information about Adam
 ---
 @extends('_layouts.master')
 
