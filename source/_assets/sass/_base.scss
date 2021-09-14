@@ -23,22 +23,6 @@ blockquote {
     @apply text-lg;
 }
 
-code {
-    @apply bg-gray-300 dark:bg-gray-900;
-    @apply px-2;
-    @apply py-px;
-    @apply rounded;
-    @apply text-sm;
-}
-
-pre {
-    @apply leading-loose;
-    @apply my-6;
-    @apply overflow-x-auto;
-    @apply rounded;
-    @apply shadow;
-}
-
 h1,
 h2,
 h3,
