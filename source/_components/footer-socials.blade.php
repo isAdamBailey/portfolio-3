@@ -65,6 +65,28 @@
             </svg>
         </a>
     </li>
+    <li class="ml-2">
+        <a
+            href="https://www.polywork.com/adambailey"
+            aria-label="polywork"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <svg
+                class="block"
+                fill="currentColor"
+                role="img"
+                aria-hidden="true"
+                width="27"
+                height="27"
+            >
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/assets/img/icons.svg#icon-polywork"
+                />
+            </svg>
+        </a>
+    </li>
     <li class="ml-5">
         <a
             href="mailto:adam@adambailey.io"
