@@ -54,14 +54,20 @@ composer require torchlight/torchlight-jigsaw
 ./vendor/bin/jigsaw torchlight:install
 ```
 
-4. Add your API token to the `'token'` section of the config file. My repo is private, so I just added it right to
-this file. If Your repo is public, they suggest adding an `.env` file for it, which is not tracked by git:
+4. Add an `.env` file in the root of your Jigsaw project, and add the file to `.gitignore` so it isn't in your 
+repository. in `.env`, add this line including your token:
+
+```dotenv
+TORCHLIGHT_API_TOKEN=
+```
+
+5. Your API token will be referenced in the `'token'` section of the `torchlight.php` config file.
 
 ```php
 'token' => getenv('TORCHLIGHT_API_TOKEN'),
 ```
 
-5. Replace the tailwind styles that come with Jigsaw for `code` and `pre` (found in `source/_assets/sass/_base.scss`), 
+6. Replace the tailwind styles that come with Jigsaw for `code` and `pre` (found in `source/_assets/sass/_base.scss`), 
 with the following basic styles which they recommend:
 
 ```scss
@@ -86,7 +92,7 @@ pre code.torchlight .summary-caret {
 Follow the [options documentation](https://torchlight.dev/docs/options) for info on configuring themes and much more. 
 For me, the configuration that it shipped with was absolutely perfect for my needs.
 
-6. Rebuild your Jigsaw site locally, and you should see the magic appear! You do not need to make any changes to the 
+7. Rebuild your Jigsaw site locally, and you should see the magic appear! You do not need to make any changes to the 
 markdown files, Torchlight uses the same backtick/language syntax that highlight.js uses.
 
 ## Clean Up!
