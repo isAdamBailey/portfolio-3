@@ -31,8 +31,8 @@ First, at this time Torchlight (version 0.2.1) requires you to sigh up for "earl
 API token(Torchlight is completely free for personal and open source projects.). I signed up through a link on 
 their home page.
 
-After I received the early access and my API token, I got started installing the Jigsaw Client. Torchlight's full 
-documentation for this installation is [here](https://torchlight.dev/docs/clients/jigsaw), and is fully sufficient.
+After I received the early access and my API token, I got started installing the Jigsaw Client. [Torchlight's full 
+documentation for this installation](https://torchlight.dev/docs/clients/jigsaw) is fully sufficient.
 You can really stop reading this now and just use that doc, but I'm still going to describe the process I took.
 
 1. Install the composer package:

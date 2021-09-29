@@ -18,13 +18,13 @@
             <a
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 dark:bg-blue-500 hover:bg-blue-200 dark:hover:bg-blue-700 leading-loose tracking-wide text-gray-800 dark:text-white uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                class="inline-block bg-gray-300 dark:bg-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 leading-loose tracking-wide text-gray-800 dark:text-white uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
             >{{ $category }}</a>
         @endforeach
     @endif
 
-    <div class="flex justify-start items-end space-x-3 mt-7">
-        <h5 class="mb-0">Share:</h5>
+    <div class="flex justify-start items-end space-x-3 mt-4">
+        <p class="mb-0">Share:</p>
         <div>
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">
                 Tweet
@@ -42,6 +42,15 @@
 
     <div class="border-b border-t border-blue-200 mb-10 mt-5 pb-4" v-pre>
         @yield('content')
+
+        <div class="mt-16 flex flex-row-reverse">
+            <a
+                href="https://github.com/isAdamBailey/portfolio-3/tree/main/source/_posts/{{ $page->getFilename() }}.{{ $page->getExtension() }}"
+                title="Edit this post on github"
+            >
+                <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 rounded-full">Edit</button>
+            </a>
+        </div>
     </div>
 
     <nav class="flex justify-between text-sm md:text-base">
