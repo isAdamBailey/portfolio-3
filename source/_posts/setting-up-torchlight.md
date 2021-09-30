@@ -57,7 +57,7 @@ composer require torchlight/torchlight-jigsaw
 4. Add an `.env` file in the root of your Jigsaw project, and add the file to `.gitignore` so it isn't in your 
 repository. in `.env`, add this line including your token:
 
-```dotenv
+```php
 TORCHLIGHT_API_TOKEN=
 ```
 
