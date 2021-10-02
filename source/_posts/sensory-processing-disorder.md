@@ -52,14 +52,14 @@ To others, this sound sensitivity and pain does not exist. I must be crazy.
 When things get to this point, my entire existence is "thrown off". I cannot think. I cannot hear people speaking to me.
 Sometimes I cannot see because of what I hear. My [executive functioning](https://en.wikipedia.org/wiki/Executive_functions)
 is challenged. This is where I become more disabled to onlookers. I can become very confused, even angry, for no 
-apparent reason, and unable to gather my thoughts enough to describe, or even find a handful of words to use to help
+apparent reason, and unable to gather my thoughts enough to describe, or even find a handful of words to help
 anyone understand what I am going through.
 
 Another very profound difficulty is when the source of the pain is from someone I love, family, a friend, a co-worker - 
-someone who is not intending to harm me in the slightest. I will be in such uncontrollable mental anguish I will want to act out
-and blame people. It feels at the time like I am being hurt by them. It is hard for me to process this complex feeling. How do you 
-ask for help or explain this feeling to the person causing the feeling in the first place, when they may not have any 
-control over the actions, nor have any intention to cause me pain.
+someone who is not intending to harm me in the slightest. I will be in such uncontrollable mental anguish I will want 
+to act out and blame people. It feels at the time like I am being hurt by them. It is hard for me to process this 
+complex feeling. How do you ask for help or explain this feeling to the person causing the feeling in the first place, 
+when they may not have any control over the actions, nor have any intention to cause me pain.
 
 It can leave me feeling very hopeless and scared, with nobody to turn to for help. I naturally tend to distance myself 
 from who or what is the source of the pain, whether it be the location of my job, or a loved one. I understand this
@@ -82,8 +82,8 @@ I was diagnosed with autism, I self diagnosed as a drummer, and it worked. Most 
 haha, you drummers!". There were others like me, and they all loved wielding this magic.
 
 ## Failures in the "real world"
-As an adult, there have been many situations when I have not been able to offset the bad feelings with structured sound. There are times when
-I am still alone in the painful feelings and become very anxious and depressed.
+As an adult, there have been many situations when I have not been able to offset the bad feelings with structured sound. 
+There are times when I am still alone in the painful feelings and become very anxious and depressed.
 
 My employment has been on the line, even while I am a very smart and dependable employee. I have walked out of work
 because someone on the other side of the room had a scented candle. I have raised a fuss at the highest levels when
@@ -95,23 +95,25 @@ My friendships have been on the line, even when me and my friends have had the b
 I have quit bands and destroyed chances of making money by playing music due to SPD. I have been unable to live with 
 certain roommates and been homeless due to these difficulties.
 
-My relationship with my family has indeed become very strained at times. My oldest son is autistic and has many "tics" which are 
-very hard for me to ignore or process in a healthy way. I am sure he often thinks he's done something wrong. My lack
-of executive functioning often prohibits me from being calm and collected when it's most required of me.
+My relationship with my family has indeed become very strained at times. My oldest son is autistic (also has SPD), and 
+has many "tics" which are very hard for me to ignore or process in a healthy way. I am sure he often thinks he's 
+done something wrong, which he clearly hasn't. My lack of executive functioning often prohibits me from being calm and 
+collected when it's most required of me.
 
 It is an impossibly hard problem that has required much patience and understanding of those close to me in my life. 
 Many people have distanced themselves from me, and I do not blame them for this.
 
 There are no medications to treat SPD. I have been on countless drugs, both legal and illegal, to attempt relief. Sometimes
 the drugs can help with the resulting anxiety and depression, but they do not touch the source of it. Also, when on
-medication daily, I feel like I don't need them all the time, since I only have the bad feelings when encountering the sensory 
-difficulties, and the "healing" period afterwords. If there are no sensory issues, I am left feeling drugged for no reason.
+medication daily, I feel like I don't need them all the time, since I only have the bad feelings when encountering the 
+sensory difficulties, and the "healing" period afterwords. If there are no sensory issues, I am left feeling drugged 
+for no reason.
 
 ## Moving forward in a positive direction
 Through years of therapy, I have learned to recognize when my anxiety is due to SPD. I can tell when a sound starts to 
-affect me, put a label on the sound, and recognize that the uncomfortable feelings I have, are a result of sensory processing
-and lack of executive functioning. I try hard to separate what I feel from the intentions of any human, and work to direct
-blame towards the disorder itself and remind myself I am in control.
+affect me, put a label on the sound, and recognize that the uncomfortable feelings I have, are a result of sensory 
+processing and lack of executive functioning. I try hard to separate what I feel from the intentions of any human, 
+and work to direct blame towards the disorder itself and remind myself I am in control.
 
 I have found tools to help moderate the resulting bad feelings. Walking puts my brain into a pattern or rhythm, and burns
 off adrenaline. I often wear noise-cancelling headphones if I feel insecure about a location or situation I am in. 
