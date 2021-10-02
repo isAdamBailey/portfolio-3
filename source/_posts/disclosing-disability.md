@@ -3,13 +3,13 @@ extends: _layouts.post
 section: content
 title: Why Do I Disclose My Disability?
 date: 2021-09-11
-description: Why I choose to make my mental illness public.
+description: Why I choose to make my diagnosis of autism public.
 keywords: autism, mental illness, disclosure, diagnosis, disability, parenting
 categories: [personal]
-excerpt: Why I choose to make my mental illness public.
+excerpt: Why I choose to make my diagnosis of autism public.
 ---
 
-Why I choose to make my mental illness public.
+Why I choose to make my diagnosis of autism public.
 
 # Understanding my children
 
@@ -22,30 +22,33 @@ succeed in life.
 As fairly new parents, we were faced with concepts that were new and scary to us. He had a number of physical
 issues as well, and it was hard to determine what was autism and what was not. To be honest, the medical field didn't
 seem to understand what autism even was, in order to explain it to us. We just knew we needed to do a lot of work 
-to figure out what environmental factors or otherwise were causing the violent behaviour he was showing in his 
+to figure out what environmental factors or otherwise were causing the aggressive behaviour he was showing in his 
 lack of words.
 
 We set forward with multiple therapies. Speech therapy, occupational therapy, physical therapy, early intervention,
 psychiatry, etc. It was a lot.
 
 Sometimes it seemed too much for him as well. Just being himself in his body was quite stressful, but we were asking 
-so much more, as suggested by many therapists. We eventually had to adjust in areas where he was becoming more violent, 
+so much more, as suggested by many therapists. We eventually had to adjust in areas where he was struggling too much, 
 and continue to push him in areas where he seemed to be progressing.
 
-My wife was pregnant with our second child at this time, but had to care for him constantly, while I continued 
-in my career to keep money rolling in. I was a printer repair technician making less money than was required of all 
-these therapies. We relied on our parents to help with costs. Life just kept getting heavier and heavier.
+My wife was pregnant with our second child at the time our oldest was diagnosed, but still had to care for him 
+constantly as I had to keep money rolling in. I was a printer repair technician making far less money than was 
+required of all these therapies. We relied on our parents to help with costs. Life just kept getting heavier 
+and more complex.
 
 # Understanding myself
 
 While my wife stepped up to the plate, I increasingly experienced more anger and meltdowns. I was overwhelmed as a 
 new parent, but even more so in the parenting scenario we were in. None of us were getting any sleep. In addition to
-the stress of daily tantrums, we often felt like it was something we did to cause our son so much pain and frustration.
+the stress of daily tantrums (both me and my son), we often felt like it was something we did to cause our son so 
+much pain and frustration.
 
-I increasingly felt as if I was falling apart, at a time when there was no room for me to fall apart. I kept 
-pushing my feelings aside, but I reached a point where there was no more hiding, and my meltdowns and temper tantrums 
+I increasingly felt as if I was falling apart, at a time when there was no room for me to fall apart. I felt like I should
+bury many of these feelings in order to better support my family by being "strong", so I kept pushing my feelings aside.
+Eventually I reached a point where there was no more hiding, and my meltdowns and temper tantrums 
 were a real problem for the rest of the family. I started inflicting physical pain upon myself to quell the 
-emotional pain I was feeling. Something else was very wrong and spiraling more and more out of control.
+emotional pain I was feeling. Something was very wrong and spiraling more and more out of control.
 
 ### Discovery and diagnosis
 
@@ -61,9 +64,12 @@ subject that was comfortable for me, music. I learned that the same thing that c
 can also let me hear and experience music on a whole different level. I am able to use sound to counteract my sensory
 dysfunction around noise. I was diagnosed with General Anxiety Disorder and Asperger's syndrome in 2012.
 
-This therapist also helped me avoid losing my job. With his help and the American Disabilities Act, I was able to 
-convince my employer that I could do much better work if im doing so within my sensory comfort zone and be allowed to 
-take breaks to center myself. It helped me be a more productive and positive employee.
+This therapist also helped me avoid losing my job. With his help and the 
+[Americans with Disabilities Act](https://www.ada.gov/ada_intro.htm), I was able to convince my employer that 
+I could do much better work if im doing so within my sensory comfort zone and be allowed to take breaks to center 
+myself. It helped me be a more productive and positive employee. I've found that the work I have done to 
+understand myself, and the toolset I have built, often makes me more likely to be able to control my emotions
+than some neurotypical co-workers I have had.
 
 I met new, wonderful people online who really understood what I was going through during this time. I could be myself 
 and honest about my "weird" feelings with these people. I ended up collaborating with one of these people on art 
@@ -87,11 +93,13 @@ The loved ones in my life could be helped to understand, and not immediately com
 person or ill-willed. I was able to see my son in a shared light, and pay better attention to the world around us, 
 and what might be causing discomfort.
 
-So yes - I am proud of my children for working so hard and being such amazing humans in a sometimes frightening and 
-uncomfortable world of people who cannot understand them. And I am proud of myself for how far I have come, and from
-such seemingly dreadful depths of depression and overload / burnout. And I am especially proud of my wife, who has to
-often be the one to balance all of us and keep herself together while fighting school systems and advocating for my son
-in all ways possible. We have done really, really well.
+I am proud of my children for working so hard and being such amazing humans in a sometimes frightening and 
+uncomfortable world of people who cannot understand them. My son works harder that anyone I know, to learn so many 
+things that come very natural to so many others. Both of my children are wonderful humans. And I am proud of myself 
+for how far I have come, and from such seemingly dreadful depths of depression and overload / burnout. I am especially 
+proud of my beautiful wife, who has to often be the one to balance all of us and keep herself together, while fighting 
+school systems who have caused harm in our children, and advocating for my son in all ways possible. We have done 
+really, really well considering the mountains we've climbed as a family.
 
 If I am able to admit flaws in my mental wellness and be in control of it as much as possible, maybe others can too.
 
@@ -99,9 +107,10 @@ If I am able to admit I need help, then maybe others can too.
 
 If I can be proud of myself for overcoming my misfortunes, then maybe my children can too.
 
-I understand there are some things about Autism that the public does not understand. I know it may not put me in the
-best light for some employers and such. There is surely some taboo around being Autistic. I get that I could easily go
-"under the radar" and never say a word. But this is not an option for my son, and many other people. Disabled people
-need many allies in their fight for acceptance. In my opinion, there is no good reason not to be honest with the 
-world about my unique neurology differences. and it is my hope I can help others do the same, if it may give 
-them some hope.
+I understand there are some things about Autism that the public (or even science) may not understand. I realize this
+may not put me in the best light for some employers. There is surely some general taboo around being Autistic. 
+I also get that I could easily go "under the radar" with all this, and never say a word. But going under the radar
+is not an option for my son, and many other people. Disabled people need many allies in their fight for acceptance. 
+
+In my opinion, there is no good reason not to be honest with the world about my unique neurology differences, and it 
+is my hope I can help others do the same, if it may give them some hope as well.
