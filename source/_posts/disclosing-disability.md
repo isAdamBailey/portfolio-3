@@ -93,13 +93,13 @@ The loved ones in my life could be helped to understand, and not immediately com
 person or ill-willed. I was able to see my son in a shared light, and pay better attention to the world around us, 
 and what might be causing discomfort.
 
-I am proud of my children for working so hard and being such amazing humans in a sometimes frightening and 
-uncomfortable world of people who cannot understand them. My son works harder that anyone I know, to learn so many 
-things that come very natural to so many others. Both of my children are wonderful humans. And I am proud of myself 
-for how far I have come, and from such seemingly dreadful depths of depression and overload / burnout. I am especially 
-proud of my beautiful wife, who has to often be the one to balance all of us and keep herself together, while fighting 
-school systems who have caused harm in our children, and advocating for my son in all ways possible. We have done 
-really, really well considering the mountains we've climbed as a family.
+I am proud of my children for working so hard in a sometimes frightening and uncomfortable world of people who often 
+cannot understand them. My son works harder that anyone I know, to learn so many things that come very natural to so 
+many others. Both of my children are wonderful humans. And I am proud of myself for how far I have come, and from 
+such seemingly dreadful depths of depression and overload / burnout. I am especially proud of my beautiful wife, who 
+has to often be the one to balance all of us and keep herself together, while fighting school systems who have caused 
+harm to our children, and advocating for my son in all ways possible. We have done really, really well considering 
+the mountains we've climbed as a family.
 
 If I am able to admit flaws in my mental wellness and be in control of it as much as possible, maybe others can too.
 
