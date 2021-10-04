@@ -21,20 +21,12 @@ succeed in life.
 
 As fairly new parents, we were faced with concepts that were new and scary to us. He had a number of physical
 issues as well, and it was hard to determine what was autism and what was not. To be honest, the medical field didn't
-seem to understand what autism even was, in order to explain it to us. We just knew we needed to do a lot of work 
-to figure out what environmental factors or otherwise were causing the aggressive behaviour he was showing in his 
-lack of words.
-
-We set forward with multiple therapies. Speech therapy, occupational therapy, physical therapy, early intervention,
-psychiatry, etc. It was a lot.
-
-Sometimes it seemed too much for him as well. Just being himself in his body was quite stressful, but we were asking 
-so much more, as suggested by many therapists. We eventually had to adjust in areas where he was struggling too much, 
-and continue to push him in areas where he seemed to be progressing.
+seem to understand what autism even was, in order to explain it to us. It was a lot to learn in a short period 
+of time.
 
 My wife was pregnant with our second child at the time our oldest was diagnosed, but still had to care for him 
 constantly as I had to keep money rolling in. I was a printer repair technician making far less money than was 
-required of all these therapies. We relied on our parents to help with costs. Life just kept getting heavier 
+required of all my son's therapies. We relied on our parents to help with costs. Life just kept getting heavier 
 and more complex.
 
 # Understanding myself
@@ -47,8 +39,7 @@ much pain and frustration.
 I increasingly felt as if I was falling apart, at a time when there was no room for me to fall apart. I felt like I should
 bury many of these feelings in order to better support my family by being "strong", so I kept pushing my feelings aside.
 Eventually I reached a point where there was no more hiding, and my meltdowns and temper tantrums 
-were a real problem for the rest of the family. I started inflicting physical pain upon myself to quell the 
-emotional pain I was feeling. Something was very wrong and spiraling more and more out of control.
+were a real problem for the rest of the family. Something was very wrong and spiraling more and more out of control.
 
 ### Discovery and diagnosis
 
@@ -75,11 +66,10 @@ I met new, wonderful people online who really understood what I was going throug
 and honest about my "weird" feelings with these people. I ended up collaborating with one of these people on art 
 projects, became very good friends, and even was the best man at his wedding!
 
-The therapist also suggested I pivot my career path to software engineering. While the change to this very start-up centered
-and chaotic path as an entry level software developer was a huge strain on me and my family for the first few years,
-eventually it changed my life for the better in many ways. It allowed my wife to stay with my son and also be able to 
-afford his many therapies. It gave me freedom to come and go as I please if I was needed at home, as long as I still
-got the work done later. I picked up software very easily and actually find it to be quite comforting at times.
+The therapist also suggested I pivot my career path to software engineering. Which changed my life for the better in 
+many ways. It allowed my wife to stay with my son and also be able to afford his many therapies. It gave me freedom 
+to come and go as I please if I was needed at home, as long as I still got the work done later. I picked up software 
+very easily and actually find it to be quite comforting at times.
 
 # Conclusion
 
@@ -87,19 +77,17 @@ While the personal diagnosis did help me get a grasp on my particular neurology 
 more importantly it gave me a true-to-life window into some of what my son was experiencing. It allowed me to empathize
 and understand my son, and many others, in a way I never could before I saw it in myself. 
 
-Better yet, it allowed me to prove that someone who was near suicide with anxiety and panic, and nearly losing jobs and 
-family, could eventually be a productive member of society when the environment was set just right. 
-The loved ones in my life could be helped to understand, and not immediately come to the conclusion that I am a mean 
-person or ill-willed. I was able to see my son in a shared light, and pay better attention to the world around us, 
-and what might be causing discomfort.
+Better yet, it allowed me to prove that someone who was nearly losing jobs and family, could eventually be a productive 
+member of society when the environment was set just right. The loved ones in my life could be helped to understand, 
+and not immediately come to the conclusion that I am a mean person or ill-willed. I was able to see my son in a shared 
+light, and pay better attention to the world around us, and what might be causing discomfort.
 
 I am proud of my children for working so hard in a sometimes frightening and uncomfortable world of people who often 
 cannot understand them. My son works harder that anyone I know, to learn so many things that come very natural to so 
 many others. Both of my children are wonderful humans. And I am proud of myself for how far I have come, and from 
 such seemingly dreadful depths of depression and overload / burnout. I am especially proud of my beautiful wife, who 
-has to often be the one to balance all of us and keep herself together, while fighting school systems who have caused 
-harm to our children, and advocating for my son in all ways possible. We have done really, really well considering 
-the mountains we've climbed as a family.
+has to often be the one to balance all of us and keep herself together, while advocating for my son in all ways possible. 
+We have done really, really well considering the mountains we've climbed as a family.
 
 If I am able to admit flaws in my mental wellness and be in control of it as much as possible, maybe others can too.
 
