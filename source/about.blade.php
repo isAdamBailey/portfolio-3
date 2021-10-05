@@ -35,6 +35,6 @@ description: A little bit of information about Adam
 
         <p>You may also visit Adam's social media, or contact him via the email link in the footer of this portfolio!</p>
 
-        @include('_components.rick-roll-egg')
+        <x-rick-roll-egg />
     </div>
 @endsection

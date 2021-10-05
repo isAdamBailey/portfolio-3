@@ -15,11 +15,7 @@
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
-            <a
-                href="{{ '/blog/categories/' . $category }}"
-                title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 dark:bg-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 leading-loose tracking-wide text-gray-800 dark:text-white uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-            >{{ $category }}</a>
+            <x-category-button :category="$category"/>
         @endforeach
     @endif
 
@@ -40,17 +36,25 @@
         </div>
     </div>
 
-    <div class="border-b border-t border-blue-200 mb-10 mt-5 pb-4" v-pre>
+    <div class="border-b border-t border-blue-200 mb-3 mt-5 pb-20" v-pre>
         @yield('content')
+    </div>
 
-        <div class="mt-16 flex flex-row-reverse">
-            <a
-                href="https://github.com/isAdamBailey/portfolio-3/tree/main/source/_posts/{{ $page->getFilename() }}.{{ $page->getExtension() }}"
-                title="Edit this post on github"
-            >
-                <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 rounded-full">Edit</button>
-            </a>
-        </div>
+    <div class="flex justify-between flex-wrap my-5 mb-20">
+        @if ($page->categories[0])
+            <div>
+                You might like other posts in
+                <x-category-button :category="$page->categories[0]"/>
+            </div>
+        @endif
+
+        <a
+            class="my-10 sm:my-0"
+            href="https://github.com/isAdamBailey/portfolio-3/tree/main/source/_posts/{{ $page->getFilename() }}.{{ $page->getExtension() }}"
+            title="Edit this post on github"
+        >
+            <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 rounded-full">Edit</button>
+        </a>
     </div>
 
     <nav class="flex justify-between text-sm md:text-base">

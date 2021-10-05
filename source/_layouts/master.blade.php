@@ -86,7 +86,7 @@
                 </li>
             </ul>
 
-            @include('_components.footer-socials')
+            <x-footer-socials />
         </footer>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
