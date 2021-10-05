@@ -14,7 +14,7 @@
 
             <div class="flex justify-center">
                 <a href="https://docs.google.com/document/d/11USW6aV671jQQfOKpp_hleF8B5f4g6QFaGCkcbuwBz8/">
-                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Open My Resume!</button>
+                    <x-action-button label="Open My Resume!" class="font-bold py-3"/>
                 </a>
             </div>
 
@@ -31,11 +31,11 @@
                         <div class="justify-around inline-flex pb-4">
                             @if($project->siteLink)
                                 <a href="{{ $project->siteLink }}">
-                                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Live Site</button>
+                                    <x-action-button label="Live Site" class="font-bold py-2"/>
                                 </a>
                             @endif
                             <a href="{{ $project->github }}">
-                                <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">Github</button>
+                                <x-action-button label="Github" class="font-bold py-2"/>
                             </a>
                         </div>
                     </div>

@@ -53,7 +53,7 @@
             href="https://github.com/isAdamBailey/portfolio-3/tree/main/source/_posts/{{ $page->getFilename() }}.{{ $page->getExtension() }}"
             title="Edit this post on github"
         >
-            <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-4 rounded-full">Edit</button>
+            <x-action-button label="Edit"/>
         </a>
     </div>
 
