@@ -7,10 +7,13 @@
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
         <meta name="keywords" content="{{ $page->keywords ?? $page->siteKeywords }}">
 
+        <meta property="og:image" content="assets/img/logo-large.svg"/>
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
 
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
@@ -56,8 +59,7 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home">
-                        <img class="md:h-64 hidden dark:block" src="/assets/img/logo-dark-theme.png" alt="{{ $page->siteName }} logo" />
-                        <img class="md:h-64 dark:hidden" src="/assets/img/logo-light-theme.png" alt="{{ $page->siteName }} logo" />
+                        <div class="text-xl sm:text-5xl">{{ $page->siteName }}</div>
                     </a>
                 </div>
 
