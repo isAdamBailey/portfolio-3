@@ -89,7 +89,7 @@
     </li>
     <li class="ml-5">
         <a
-            href="mailto:adam@adambailey.io"
+            href="mailto:adamjbailey7@gmail.com"
             aria-label="email"
             target="_blank"
             rel="noreferrer"
