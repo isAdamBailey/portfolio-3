@@ -1,10 +1,13 @@
 <div id="egg" class="flex justify-center opacity-0 transition-opacity duration-1000 ease-in-out">
     <img id="egg-image" class="my-5 hidden" src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="rick rolled">
 </div>
-<small id="egg-text">
-    If you've actually read this far, and you are on a desktop computer, <strong>type the word "adam"</strong>
-    and see what happens!
-</small>
+<div id="egg-text">
+    <x-comment-box class="lg:w-1/2">
+        <small>
+            If you are on a desktop computer, type the word "adam" and see what happens!
+        </small>
+    </x-comment-box>
+</div>
 
 @push('scripts')
     <script>
