@@ -23,6 +23,15 @@ blockquote {
     @apply text-lg;
 }
 
+code {
+    @apply bg-gray-900;
+    @apply text-gray-400;
+    @apply px-2;
+    @apply py-1;
+    @apply rounded;
+    @apply text-sm;
+}
+
 /*
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.

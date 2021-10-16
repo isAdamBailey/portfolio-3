@@ -56,10 +56,21 @@ seems quite extreme, there have been many times I've forgotten where I parked or
 When our memory cannot be trusted, the camera on our smartphones can. Take a picture of the parking lot, of the store.
 Commit the picture to your phone's memory, and you don't need your human one anymore.
 
-## Committing
-Each point of progress in git is called a `commit`. This is where your carabiner is locked into the rock.
+## Committing code
+Each point of progress in git is called a `commit`.
 
-For instance, you simply add some text, and the code breaks. Are you sure you only added text since your last `commit`?
+To commit some code to your project, make sure things work, or are safe for you to attach yourself with a carabiner.
+Then add your code:
+```bash
+git add .
+```
+Now that your code is added to git, make your commit and a message to let your future self (or a team member) know 
+what the changes were:
+```bash
+git commit -m 'Text change'
+```
+
+What if the code breaks due to this one text change? Are you sure you only added text since your last `commit`?
 let's find out.
 
 ```bash
@@ -104,7 +115,8 @@ $ git reset 9ef9173
 
 You can basically go back to three carabiner positions ago and not fall from there.
 
-Wouldn't it be great to have that for life? We could say "Go back to before I screwed that thing up".
+This was a lot of code specific instruction, but wouldn't it be great to have that for life? We could say 
+"Go back to before I screwed that thing up in my life".
 
 ## Conclusion
 While this article is an extremely simple example of how to use Git, It can also be a simple framework for progress 
