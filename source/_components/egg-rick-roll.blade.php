@@ -1,10 +1,10 @@
-<div id="egg" class="flex justify-center opacity-0 transition-opacity duration-1000 ease-in-out">
-    <img id="egg-image" class="my-5 hidden" src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="rick rolled">
+<div id="egg" class="flex justify-center">
+    <img id="egg-image" class="hidden woah flyIn" src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="rick rolled">
 </div>
 <div id="egg-text">
-    <x-comment-box class="lg:w-1/2">
+    <x-comment-box class="invisible md:visible md:w-1/2">
         <small>
-            If you are on a desktop computer, type the word "adam" and see what happens!
+            Easter egg - type the word "adam"!
         </small>
     </x-comment-box>
 </div>
@@ -18,8 +18,6 @@
 
             text.classList.toggle('hidden');
             image.classList.toggle('hidden');
-            element.classList.toggle('opacity-0');
-            element.classList.toggle('opacity-100');
         }).listen();
     </script>
 @endpush

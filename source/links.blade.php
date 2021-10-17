@@ -5,7 +5,7 @@ description: Links to various other places you can find Adam on the web.
 @extends('_layouts.master')
 
 @section('body')
-    <h1>Links</h1>
+    <x-page-header>Links</x-page-header>
 
     <div class="content">
         <h2>More places across the web where you can find me.</h2>

@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-    <h1>{{ $page->title }}</h1>
+    <x-page-header>{{ $page->title }}</x-page-header>
 
     <div class="text-2xl border-b border-blue-200 mb-6 pb-10">
         @yield('content')

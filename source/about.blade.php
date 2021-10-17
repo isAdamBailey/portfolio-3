@@ -5,7 +5,7 @@ description: A little bit of information about Adam
 @extends('_layouts.master')
 
 @section('body')
-    <h1>About</h1>
+    <x-page-header>About</x-page-header>
 
     <div class="content">
         <p>Adam is a Software Developer who lives on land
@@ -35,6 +35,6 @@ description: A little bit of information about Adam
 
         <p>You may also visit Adam's social media, or contact him via the email link in the footer of this portfolio!</p>
 
-        <x-rick-roll-egg />
+        <x-egg-rick-roll />
     </div>
 @endsection

@@ -8,7 +8,7 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
-    <h1>Blog</h1>
+    <x-page-header>Blog</x-page-header>
 
     <hr class="border-b my-6">
 

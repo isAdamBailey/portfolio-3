@@ -3,7 +3,8 @@
 @section('body')
 
     <section class="column center flex-1">
-        <h1>Hi! I'm Adam Bailey</h1>
+        <x-page-header>Hi! I'm Adam Bailey</x-page-header>
+
         <div class="content">
             <h2>
                 I'm a Software Developer working in
@@ -72,4 +73,6 @@
             <hr class="border-b my-6">
         @endif
     @endforeach
+
+    <x-egg-chaos-text />
 @stop
