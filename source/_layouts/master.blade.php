@@ -59,7 +59,7 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home">
-                        <div class="text-xl sm:text-5xl">{{ $page->siteName }}</div>
+                        <div class="woah blazingStarText text-xl sm:text-5xl">{{ $page->siteName }}</div>
                     </a>
                 </div>
 
