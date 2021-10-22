@@ -9,7 +9,9 @@
             <h2>
                 I'm a Software Developer working in
                 <span id="vue-typing-text">
-                    <typing-text :words="['Laravel.', 'PHP.', 'Javascript.', 'Vue.']"></typing-text>
+                    <typing-text :words="[
+                        'Laravel.', 'PHP.', 'JavaScript.', 'Vue.', 'chaos.', 'the basement.', 'the dark.'
+                    ]"></typing-text>
                 </span>
             </h2>
 
