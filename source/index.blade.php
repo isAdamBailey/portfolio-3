@@ -20,8 +20,8 @@
             </div>
 
             <h2 class="mt-12">Projects</h2>
-            <p>While the vast majority of my best work was done in private repositories,
-                Here are some examples of open source projects ive worked on.</p>
+            <p>While the majority of my work has been committed to private repositories,
+                Here are some examples of open source projects I've worked on.</p>
             <div class="posts flex justify-center flex-wrap">
                 @foreach ($projects as $project)
                     <div class="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg m-4 dark:bg-gray-700">
