@@ -13,7 +13,26 @@ description: A little bit of information about Adam
                 previously known to be sacred to the Chinook tribe
             </a>, a wonderful place on the Columbia River now called
             <a href="https://www.cityofvancouver.us/">Vancouver, Washington</a>.
-            Adam has been building software professionally in PHP and JavaScript since 2015.</p>
+        </p>
+        <span>Adam has contributed to full-scale production applications in the following industries:</span>
+        <ul class="m-0 list-none">
+            <li>
+                <strong>Healthcare -</strong>
+                <small>EMR Integration &middot; Landing Pages &middot; Front Office &middot; HIPAA</small>
+            </li>
+            <li>
+                <strong>Fintech -</strong>
+                <small>Loan Processing &middot; FDIC</small>
+            </li>
+            <li>
+                <strong>Marketing -</strong>
+                <small>SEO &middot; Content &middot; Accessibility</small>
+            </li>
+            <li>
+                <strong>Fitness -</strong>
+                <small>Tracker Integration &middot; Team Competition &middot; Data aggregate/Reporting</small>
+            </li>
+        </ul>
         <p>The allure in creating software comes from the allure of creation! In addition to his interest in
             building software, He has a wood shop in his garage, where he makes everything from drumsticks to
             toy clocks, and has been a professional musician for over 30 years, playing drums for bands of all
