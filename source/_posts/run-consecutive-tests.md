@@ -10,7 +10,7 @@ excerpt: How to run a PHPUnit test multiple times, and log results.
 
 How to run a PHPUnit test multiple times, and log results.
 
-# Run A Test Consecutively
+## Run A Test Consecutively
 
 Have you ever had tests fail randomly due to fake or random data? Sometimes it passes 5 times then fails once. Don't you wish you could just set one to run 100 times and walk away, checking the results later? This article outlines how to run a single test (or suite) in PHPUnit multiple times and log the results to its own file.
 

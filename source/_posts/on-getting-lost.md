@@ -6,7 +6,6 @@ date: 2021-10-06
 description: How to avoid getting lost in life and code.
 keywords: git, learning, learning code, newbie, lost, anxiety, impostor syndrome, junior
 categories: [learning]
-featured: true
 excerpt: How to avoid getting lost in life and code.
 ---
 
