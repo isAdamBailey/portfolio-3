@@ -22,8 +22,31 @@
             </div>
 
             <h2 class="mt-12">Projects</h2>
-            <p>While the majority of my work has been committed to private repositories,
-                Here are some examples of open source projects I've worked on.</p>
+            <div class="px-4 flex flex-col justify-between rounded overflow-hidden shadow-lg m-4 dark:bg-gray-700">
+                <p>I have built and contributed to full-scale production applications in the following industries:</p>
+                <ul class="m-0 list-none">
+                    <li>
+                        <strong>Healthcare -</strong>
+                        <small>EMR Integration &middot; Landing Pages &middot; Front Office</small>
+                    </li>
+                    <li>
+                        <strong>Fintech -</strong>
+                        <small>Loan Processing &middot; Banking integrations</small>
+                    </li>
+                    <li>
+                        <strong>Marketing -</strong>
+                        <small>SEO &middot; Content &middot; Accessibility</small>
+                    </li>
+                    <li>
+                        <strong>Fitness -</strong>
+                        <small>Tracker Integration &middot; Team Competition</small>
+                    </li>
+                </ul>
+                <p>
+                    However, many of those were private repositories.
+                </p>
+            </div>
+            <h3>Here are some examples of open source projects I've worked on.</h3>
             <div class="posts flex justify-center flex-wrap">
                 @foreach ($projects as $project)
                     <div class="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg m-4 dark:bg-gray-700">
