@@ -57,18 +57,12 @@
 
         <header class="flex items-center shadow bg-white dark:bg-gray-800 border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-                <div class="flex items-center">
-                    <a id="title" href="/" title="{{ $page->siteName }} home">
-                        <svg width="100%" viewBox="0 0 1350 300" xmlns="http://www.w3.org/2000/svg">
-                            <text class="fill-current uppercase" x="0" y="50%" alignment-baseline="middle" font-size="13rem">
-                                Adam Bailey
-                            </text>
-                        </svg>
-                    </a>
-                </div>
+                @include('_nav.header-title')
 
-                <div id="vue-search" class="flex flex-1 justify-end items-center">
-                    <search></search>
+                <div class="flex flex-1 justify-end items-center">
+                    <div id="vue-search">
+                        <search></search>
+                    </div>
 
                     @include('_nav.menu')
 
