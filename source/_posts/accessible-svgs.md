@@ -55,7 +55,7 @@ its purpose:
 </svg>
 ```
 
-The Chrome dev tools "Accessibility Tree" will end up seeing something like `StaticText "This is pretty descriptive."`.
+The Chrome dev tools "Accessibility Tree" will end up looking something like `StaticText "This is pretty descriptive."`.
 
 However, If your SVG includes some imagery along with your text, It can be helpful to include the `role` attribute,
 in order for the screen reader to know it is an image with text:
