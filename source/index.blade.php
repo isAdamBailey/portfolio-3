@@ -60,9 +60,11 @@
                                     <x-action-button label="Live Site" class="font-bold py-2"/>
                                 </a>
                             @endif
-                            <a href="{{ $project->github }}">
-                                <x-action-button label="Github" class="font-bold py-2"/>
-                            </a>
+                            @if($project->github)
+                                <a href="{{ $project->github }}">
+                                    <x-action-button label="Github" class="font-bold py-2"/>
+                                </a>
+                            @endif
                         </div>
                     </div>
                 @endforeach
