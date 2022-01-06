@@ -36,7 +36,7 @@
         handleScroll() {
             const scrollBtn = document.getElementById('scrollTopButton');
 
-            if (window.scrollY > 0) {
+            if (window.scrollY > 500) {
                 scrollBtn.classList.remove("invisible");
             } else {
                 scrollBtn.classList.add("invisible");
