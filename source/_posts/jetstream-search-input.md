@@ -180,8 +180,7 @@ Use the new component in the header of your `Stories` page like so:
 ```html
 <div class="flex justify-between items-center">
     <div class="font-header text-3xl md:text-5xl">Stories</div>
-    // add the line below
-    <search-input route-name="stories.index" />
+    <search-input route-name="stories.index" /> <!-- [tl! add] -->
 </div>
 ```
 
@@ -192,12 +191,12 @@ And into the `script` area:
     import { defineComponent } from "vue";
     import AppLayout from "@/Layouts/AppLayout.vue";
     // add below line to import component
-    import SearchInput from "@/Components/SearchInput";
+    import SearchInput from "@/Components/SearchInput"; // [tl! add]
     
     export default defineComponent({
         components: {
             // add below line to register component to template
-            SearchInput,
+            SearchInput, // [tl! add]
             AppLayout,
         },
     
