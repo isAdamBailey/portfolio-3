@@ -79,9 +79,8 @@
             @yield('body')
         </main>
 
+        <x-scroll-top/>
         <footer class="bg-white dark:bg-blue-700 text-center text-sm mt-12 py-4" role="contentinfo">
-            <x-scroll-top/>
-
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
                     &copy; <strong>Adam Bailey</strong> {{ date('Y') }}.
