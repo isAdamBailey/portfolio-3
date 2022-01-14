@@ -5,9 +5,11 @@ description: A little bit of information about Adam
 @extends('_layouts.master')
 
 @section('body')
-    <x-page-header>About</x-page-header>
 
     <div class="content">
+        <div class="flex justify-center mb-10">
+            <img src="/assets/img/main-logo.svg" alt="Main site logo for Adam Bailey">
+        </div>
         <p>Adam is a Software Developer who lives on land
             <a href="http://publichistorypdx.org/projects/chinook/lower-columbia-chinook-historical-timeline/">
                 previously known to be sacred to the Chinook tribe

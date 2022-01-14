@@ -1,1 +1,1 @@
-<h1 class="woah blazingStarText">{{ $slot }}</h1>
+<h1 class="">{{ $slot }}</h1>

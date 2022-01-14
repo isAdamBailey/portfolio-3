@@ -23,25 +23,21 @@
 
             <h2 class="mt-12">Projects</h2>
             <div class="px-4 flex flex-col justify-between rounded overflow-hidden shadow-lg m-4 dark:bg-gray-700">
-                <p>I have built and contributed to full-scale production applications in the following industries:</p>
-                <ul class="m-0 list-none">
-                    <li>
-                        <strong>Healthcare -</strong>
-                        <small>EMR Integration &middot; Landing Pages &middot; Front Office</small>
-                    </li>
-                    <li>
-                        <strong>Fintech -</strong>
-                        <small>Loan Processing &middot; Banking integrations</small>
-                    </li>
-                    <li>
-                        <strong>Marketing -</strong>
-                        <small>SEO &middot; Content &middot; Accessibility</small>
-                    </li>
-                    <li>
-                        <strong>Fitness -</strong>
-                        <small>Tracker Integration &middot; Team Competition</small>
-                    </li>
-                </ul>
+                <p class="mb-0">
+                    I have built and contributed to full-scale production applications in:
+                </p>
+                <p class="my-0">
+                    <span class="text-blue-700 dark:text-blue-200 text-3xl font-semibold">Healthcare</span> -
+                    <span class="text-blue-700 dark:text-blue-200 text-3xl font-semibold">Fintech</span> -
+                    <span class="text-blue-700 dark:text-blue-200 text-3xl font-semibold">Marketing</span> -
+                    <span class="text-blue-700 dark:text-blue-200 text-3xl font-semibold">Fitness</span>
+                </p>
+                <p class="text-xs text-blue-700 dark:text-blue-200 my-0">
+                    EMR Integration &middot; Landing Pages &middot; Front Office &middot; Loan Processing
+                    &middot; Banking integrations &middot; SEO &middot; Content &middot; Accessibility
+                    &middot; Tracker Integration &middot; Team Competition
+                </p>
+
                 <p>
                     However, many of those were private repositories.
                 </p>

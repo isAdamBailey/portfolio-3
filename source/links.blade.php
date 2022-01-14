@@ -5,6 +5,9 @@ description: Links to various other places you can find Adam on the web.
 @extends('_layouts.master')
 
 @section('body')
+    <div class="flex justify-center mb-10">
+        <img src="/assets/img/main-logo.svg" alt="Main site logo for Adam Bailey">
+    </div>
     <x-page-header>Links</x-page-header>
 
     <div class="content">

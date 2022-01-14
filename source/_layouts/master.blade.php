@@ -7,13 +7,15 @@
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
         <meta name="keywords" content="{{ $page->keywords ?? $page->siteKeywords }}">
 
-        <meta property="og:image" content="assets/img/logo-large.svg"/>
+        <meta property="og:image" content="assets/img/social-image.png"/>
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="630"/>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@isAdamBailey" />
 
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 

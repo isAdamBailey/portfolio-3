@@ -8,6 +8,9 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
+    <div class="flex justify-center mb-10">
+        <img src="/assets/img/main-logo.svg" alt="Main site logo for Adam Bailey">
+    </div>
     <x-page-header>Blog</x-page-header>
 
     <hr class="border-b my-6">
