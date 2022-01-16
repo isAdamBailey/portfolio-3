@@ -7,9 +7,12 @@
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
         <meta name="keywords" content="{{ $page->keywords ?? $page->siteKeywords }}">
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@isAdamBailey" />
-        <meta property="og:image" content="/assets/img/social-image.png"/>
+        <meta name="twitter:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}">
+        <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}">
+        <meta name="twitter:image" content="{{ $page->baseUrl }}/assets/img/social-image.png">
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/img/social-image.png"/>
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
