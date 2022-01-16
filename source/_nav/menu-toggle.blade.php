@@ -1,4 +1,4 @@
-<button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none transition-all"
+<button class="flex justify-center items-center bg-gradient-to-b from-blue-300 to-blue-700 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none transition-all"
     aria-label="Toggle Menu"
     onclick="navMenu.toggle()"
 >

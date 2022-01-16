@@ -1,5 +1,5 @@
 <button
-   class="text-blue-700 dark:text-blue-300 hover:text-gray-600 m-5"
+   class="text-blue-700 dark:text-yellow-400 hover:text-gray-600 dark:hover:text-yellow-200 m-5"
    aria-label="Toggle Dark Theme"
    onclick="theme.toggle()"
 >

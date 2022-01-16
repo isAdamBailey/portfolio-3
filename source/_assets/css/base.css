@@ -1,0 +1,168 @@
+body {
+    font-size: 17px;
+}
+
+a {
+    @apply font-semibold;
+    @apply no-underline;
+    @apply text-blue-700 dark:text-blue-500;
+    @apply hover:text-blue-900 dark:hover:text-blue-700;
+}
+
+blockquote {
+    @apply border-blue-400;
+    @apply border-l-4;
+    @apply font-normal;
+    @apply italic;
+    @apply my-8;
+    @apply pl-6;
+    @apply text-gray-800 dark:text-gray-100;
+    @apply text-lg;
+}
+
+code {
+    @apply bg-gray-900;
+    @apply text-gray-400;
+    @apply px-2;
+    @apply py-1;
+    @apply rounded;
+    @apply text-sm;
+}
+
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+pre {
+    @apply my-4 rounded overflow-x-auto;
+}
+
+/*
+ Add some vertical padding and expand the width
+ to fill its container. The horizontal padding
+ comes at the line level so that background
+ colors extend edge to edge.
+*/
+pre code.torchlight {
+    @apply block py-4 min-w-max;
+}
+
+/*
+ Horizontal line padding.
+*/
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+/*
+ Push the code away from the line numbers and
+ summary caret indicators.
+*/
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply mr-4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply mt-8;
+    @apply mb-4;
+    @apply text-gray-900 dark:text-gray-100;
+    @apply leading-tight;
+
+    &:first-child {
+        @apply mt-0;
+    }
+}
+
+h1 {
+    @apply text-5xl;
+    @apply font-extrabold;
+}
+
+h2 {
+    @apply text-4xl;
+    @apply font-bold;
+}
+
+h3 {
+    @apply text-3xl;
+    @apply font-bold;
+}
+
+h4 {
+    @apply text-2xl;
+    @apply font-normal;
+}
+
+h5 {
+    @apply text-xl;
+    @apply font-normal;
+}
+
+h6 {
+    @apply text-lg;
+    @apply font-light;
+}
+
+hr {
+    @apply my-12;
+    @apply border-b;
+    @apply border-blue-200;
+    @apply rounded-full;
+}
+
+li {
+    & ul,
+    & ol {
+        @apply ml-8;
+        @apply my-0;
+    }
+}
+
+ol,
+ul {
+    @apply my-4;
+}
+
+ol {
+    @apply list-decimal;
+}
+
+ul {
+    @apply list-disc;
+}
+
+p {
+    @apply my-3;
+
+    @screen md {
+        @apply my-6;
+    }
+}
+
+pre {
+    @apply p-4;
+    @apply my-6;
+    @apply text-base;
+    @apply bg-gray-200;
+    @apply leading-loose;
+    @apply rounded;
+    @apply shadow;
+    @apply overflow-x-auto;
+
+    & code {
+        @apply block;
+        @apply p-0;
+        @apply bg-transparent;
+    }
+}
+
+::selection {
+    @apply text-white;
+    @apply bg-blue-400;
+}

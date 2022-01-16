@@ -11,7 +11,7 @@
             onclick="actions.scrollToTop()"
         >
             <svg
-                class="m-0 p-0 mr-2 transform rotate-180"
+                class="mt-0.5 p-0 mr-2.5 transform rotate-180"
                 fill="currentColor"
                 role="img"
                 aria-hidden="true"

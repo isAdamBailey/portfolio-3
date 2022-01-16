@@ -2,7 +2,7 @@
 title: Links
 description: Links to various other places you can find Adam on the web.
 ---
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
     <div class="flex justify-center mb-10">

@@ -1,5 +1,5 @@
 <div id="egg" class="flex justify-center">
-    <img id="egg-image" class="hidden woah flyIn" src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="rick rolled">
+    <img id="egg-image" class="hidden" src="https://media.giphy.com/media/a6OnFHzHgCU1O/giphy.gif" alt="rick rolled">
 </div>
 <div id="egg-text">
     <x-comment-box class="invisible md:visible md:w-1/2">

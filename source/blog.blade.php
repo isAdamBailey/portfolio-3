@@ -5,7 +5,7 @@ pagination:
     collection: posts
     perPage: 10
 ---
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
     <div class="flex justify-center mb-10">

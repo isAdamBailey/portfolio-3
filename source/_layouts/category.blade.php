@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
     <x-page-header>{{ $page->title }}</x-page-header>

@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
 
@@ -97,5 +97,5 @@
         @endif
     @endforeach
 
-    <x-egg-chaos-text />
+    <x-egg-marquee-text />
 @stop

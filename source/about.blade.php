@@ -2,7 +2,7 @@
 title: About
 description: A little bit of information about Adam
 ---
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
 
