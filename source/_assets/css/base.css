@@ -145,23 +145,6 @@ p {
     }
 }
 
-pre {
-    @apply p-4;
-    @apply my-6;
-    @apply text-base;
-    @apply bg-gray-200;
-    @apply leading-loose;
-    @apply rounded;
-    @apply shadow;
-    @apply overflow-x-auto;
-
-    & code {
-        @apply block;
-        @apply p-0;
-        @apply bg-transparent;
-    }
-}
-
 ::selection {
     @apply text-white;
     @apply bg-blue-400;
