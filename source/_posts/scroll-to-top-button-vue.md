@@ -5,7 +5,7 @@ title: Simple Vue.js and Tailwind.css Scroll To Top Button
 date: 2022-01-06
 description: A simple scroll to top button made with Vue.js and Tailwind.css.
 keywords: vue.js,tailwind.css,scroll to top,web development,software development
-categories: [configuration, learning]
+categories: [laravel, vue]
 featured: true
 excerpt: A simple scroll to top button made with Vue.js and Tailwind.css.
 ---

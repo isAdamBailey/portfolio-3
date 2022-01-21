@@ -5,7 +5,7 @@ title: Laravel Jetstream Search Input
 date: 2021-12-28
 description: A simple search input for Laravel Jetstream and Inertia.
 keywords: laravel,laravel jetstream,inertia,search input,web development,software development
-categories: [configuration, learning]
+categories: [laravel, vue]
 featured: true
 excerpt: A simple search input for Laravel Jetstream and Inertia.
 ---
