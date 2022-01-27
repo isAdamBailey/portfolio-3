@@ -22,7 +22,7 @@
             </div>
 
             <h2 class="mt-12">Projects</h2>
-            <div class="px-4 flex flex-col justify-between rounded overflow-hidden shadow-lg m-4 dark:bg-gray-700">
+            <div class="px-4 flex flex-col justify-between rounded overflow-hidden shadow-lg shadow-blue-200 dark:shadow-purple-900 m-4 dark:bg-gray-700">
                 <p class="mb-0">
                     I have built and contributed to full-scale production applications in:
                 </p>
@@ -45,7 +45,7 @@
             <h3>Here are some examples of open source projects I've worked on.</h3>
             <div class="posts flex justify-center flex-wrap">
                 @foreach ($projects as $project)
-                    <div class="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg m-4 dark:bg-gray-700">
+                    <div class="flex flex-col justify-between max-w-sm rounded overflow-hidden shadow-lg shadow-blue-200 dark:shadow-purple-900 m-4 bg-white dark:bg-gray-700">
                         <div class="p-4">
                             <div class="font-bold text-3xl">{{ $project->title }}</div>
                             <p>{{ $project->description }}</p>
@@ -74,26 +74,8 @@
 
 
     <h2 class="mt-12">Featured Blog Posts</h2>
-    @foreach ($posts->where('featured', true) as $featuredPost)
-        <div class="w-full mb-6">
-            <div class="flex justify-between">
-                <h2 class="text-3xl mt-0">
-                    <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
-                        {{ $featuredPost->title }}
-                    </a>
-                </h2>
-
-                <p class="text-gray-700 dark:text-gray-100 font-medium my-2">
-                    {{ $featuredPost->getDate()->format('F j, Y') }}
-                </p>
-            </div>
-
-            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
-
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read
-            </a>
-        </div>
+    @foreach ($posts->where('featured', true) as $post)
+        @include('_components.post-preview-inline')
 
         @if (! $loop->last)
             <hr class="border-b my-6">
