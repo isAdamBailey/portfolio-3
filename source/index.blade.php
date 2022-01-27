@@ -50,6 +50,9 @@
                             <div class="font-bold text-3xl">{{ $project->title }}</div>
                             <p>{{ $project->description }}</p>
                         </div>
+                        @if ($project->cover_image)
+                            <img src="{{ $project->cover_image }}" alt="{{ $project->title }} cover image" class="mb-3">
+                        @endif
                         <div class="justify-around inline-flex pb-4">
                             @if($project->siteLink)
                                 <a href="{{ $project->siteLink }}">
@@ -58,7 +61,7 @@
                             @endif
                             @if($project->github)
                                 <a href="{{ $project->github }}">
-                                    <x-action-button label="Github" class="font-bold py-2"/>
+                                    <x-action-button label="Code" class="font-bold py-2"/>
                                 </a>
                             @endif
                         </div>
