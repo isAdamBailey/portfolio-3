@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.17 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -786,15 +786,6 @@ p {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mt-0 {
-  margin-top: 0px;
-}
-.mb-4 {
-  margin-bottom: 1rem;
-}
 .mr-4 {
   margin-right: 1rem;
 }
@@ -810,6 +801,12 @@ p {
 .ml-5 {
   margin-left: 1.25rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mt-0 {
+  margin-top: 0px;
+}
 .mt-0\.5 {
   margin-top: 0.125rem;
 }
@@ -818,6 +815,9 @@ p {
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -1167,11 +1167,11 @@ p {
 .font-semibold {
   font-weight: 600;
 }
-.font-extrabold {
-  font-weight: 800;
-}
 .font-medium {
   font-weight: 500;
+}
+.font-extrabold {
+  font-weight: 800;
 }
 .font-normal {
   font-weight: 400;
@@ -1206,10 +1206,6 @@ p {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1217,6 +1213,10 @@ p {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .text-gray-500 {
   --tw-text-opacity: 1;
@@ -1387,6 +1387,10 @@ p {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.dark .dark\:hover\:text-yellow-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
 .dark .dark\:hover\:text-yellow-200:hover {
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity));
@@ -1394,14 +1398,6 @@ p {
 .dark .dark\:hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-.dark .dark\:hover\:text-yellow-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-.dark .dark\:hover\:text-yellow-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 .dark .hover\:dark\:shadow-yellow-500:hover {
   --tw-shadow-color: #eab308;
