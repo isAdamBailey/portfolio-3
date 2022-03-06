@@ -1,7 +1,7 @@
 ---
 title: Local Covid-19 Aggregate
-description: I built this tool during the pandemic to easily track coronavirus totals in my state and county. Integrating the CovidActNow api, It is built with Vue.js and Tailwind.css.
+description: I built this tool during the pandemic to easily track coronavirus totals in my state and county. Integrating the CovidActNow api, It is built with Vue 3 composition API and Tailwind.css.
 cover_image: /assets/images/covid.png
-siteLink: https://covid-19.adambailey.io/
-github: https://github.com/isAdamBailey/covid-19
+siteLink: https://covid.adambailey.io/
+github: https://github.com/isAdamBailey/covid.adambailey.io
 ---
