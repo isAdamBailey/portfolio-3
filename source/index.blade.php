@@ -10,7 +10,7 @@
                 I'm a Software Developer working in
                 <span id="vue-typing-text">
                     <typing-text :words="[
-                        'Laravel.', 'PHP.', 'JavaScript.', 'Vue.', 'chaos.', 'the basement.', 'the dark.'
+                        'JavaScript.', 'Vue.', 'Laravel.', 'PHP.', 'chaos.', 'the basement.', 'the dark.', 'making you think the computer is typing this by itself.'
                     ]"></typing-text>
                 </span>
             </h2>
