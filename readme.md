@@ -1,5 +1,7 @@
 # adambailey.io
 
+[![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2F8acc5225-8ae7-4e40-a917-d80bf1eae3c9&style=flat)](https://forge.laravel.com)
+
 This is my personal web portfolio, which contains all open source projects and a blog.
 This site was made with:
 - [Jigsaw](http://jigsaw.tighten.co/), a framework for rapidly building static sites.
