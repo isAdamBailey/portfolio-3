@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       current: 1,
-      typingSpeed: 100,
+      typingSpeed: 75,
       waitingTime: 1000
     }
   },

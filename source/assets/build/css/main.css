@@ -783,6 +783,9 @@ p {
 .m-5 {
   margin: 1.25rem;
 }
+.m-6 {
+  margin: 1.5rem;
+}
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -892,6 +895,21 @@ p {
 .mt-7 {
   margin-top: 1.75rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .block {
   display: block;
 }
@@ -928,8 +946,35 @@ p {
 .h-4 {
   height: 1rem;
 }
+.h-1\/4 {
+  height: 25%;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-64 {
+  height: 16rem;
+}
+.h-48 {
+  height: 12rem;
+}
+.h-44 {
+  height: 11rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-28 {
+  height: 7rem;
+}
+.h-32 {
+  height: 8rem;
+}
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-full {
+  min-height: 100%;
 }
 .w-full {
   width: 100%;
@@ -1006,6 +1051,9 @@ p {
 }
 .justify-around {
   justify-content: space-around;
+}
+.justify-items-center {
+  justify-items: center;
 }
 .gap-4 {
   gap: 1rem;
@@ -1178,6 +1226,12 @@ p {
 .pr-7 {
   padding-right: 1.75rem;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1288,6 +1342,22 @@ p {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.text-amber-200 {
+  --tw-text-opacity: 1;
+  color: rgb(253 230 138 / var(--tw-text-opacity));
+}
+.text-amber-500 {
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -1517,6 +1587,10 @@ p {
     margin-top: 2.5rem;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1529,12 +1603,24 @@ p {
     display: none;
   }
 
+  .md\:h-24 {
+    height: 6rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:px-0 {
