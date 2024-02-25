@@ -271,5 +271,8 @@ I have certainly been enjoying how fast I can code out my ideas using Laravel Je
 
 Hopefully this adds some value to your experience!
 
+You may also find my article outlining how to apply the SpeechRecognition API to this component useful. 
+Please see [VueJs Search Input With SpeechRecognition API](/blog/vue-search-input-speech-recognition).
+
 
 Happy coding!

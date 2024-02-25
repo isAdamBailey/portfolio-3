@@ -5,7 +5,6 @@ title: Setting Up Torchlight
 date: 2021-09-16
 description: How I set up torchlight.dev to style code blocks in my portfolio.
 categories: [configuration]
-featured: true
 excerpt: How I set up torchlight.dev to style code blocks in my portfolio.
 ---
 

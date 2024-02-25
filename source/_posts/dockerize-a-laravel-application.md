@@ -4,7 +4,6 @@ section: content
 title: Dockerize A Laravel Application
 date: 2021-08-20
 description: What I did to serve a laravel application with docker containers.
-featured: true
 categories: [laravel, configuration]
 excerpt: What I did to serve a laravel application with docker containers.
 ---
