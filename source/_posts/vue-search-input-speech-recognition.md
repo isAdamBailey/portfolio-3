@@ -19,7 +19,7 @@ This post outlines how I did that, and gives you a reasonably good starting poin
 >
 > SpeechRecognition is a Web Speech API interface that allows you to convert speech to text using Javascript in the browser.
 
-This Post picks up from a search input I had already built using VueJs and Tailwind in Laravel Jetstream application using IntertiaJS. 
+This Post picks up from a search input I had already built using VueJs and Tailwind in Laravel JetStream application using IntertiaJS. 
 The article describing how to build this search input can be found [here](/blog/jetstream-search-input).
 
 ## The Search Input Component
@@ -93,7 +93,7 @@ We have a:
  - Single prop of `routeName` which accepts the route name from the Laravel route above, such as `'stories.index'`.
  - Data property that looks in the inertia page props for a search value.
  - Watcher on that `search` data property.
- - Method that uses lodash `debounce` to only fetch results every 500 milliseconds.
+ - Method that uses [lodash `debounce`](https://lodash.com/docs/4.17.15#debounce) to only fetch results every 500 milliseconds.
 
 ## Adding Speech Recognition
 
@@ -106,7 +106,7 @@ Just below the input field, add a button:
 </button>
 ```
 
-And in the `script` section, we add the `startVoiceRecognition` method:
+And in the `script` section, we add the `startVoiceRecognition` method we called in the template:
 
 ```javascript
 startVoiceRecognition() {
@@ -131,7 +131,7 @@ startVoiceRecognition() {
 
 This method creates a new instance of the `SpeechRecognition` object, and sets the 
 [`interimResults`](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/interimResults) property to `true`.
-When event.results[0].isFinal is `true`, it sets the `search` data property to the `transcript` value from the `results` event.   
+When `event.results[0].isFinal` is `true`, it sets the `search` data property to the `transcript` value from the `results` event.   
 
 This alone should be enough to get the speech recognition working in your search input, but we can do a little more to 
 improve the user experience.
@@ -164,7 +164,7 @@ recognition.addEventListener("end", () => {
 });
 ```
 
-now we can use the `listening` data property to toggle the input and button's styles:
+Now we can use the `listening` data property to toggle the input and button's styles:
 ```vue
 <input
     id="search"
@@ -195,10 +195,11 @@ now we can use the `listening` data property to toggle the input and button's st
 </style>
 ```
 
-Please add your own styles as you see fit. I'm using Tailwind.css classes here. In my application i also used an SVG 
-to apply the styles to. This should just give a bask outline of how to add the styles.
+Please add your own styles as you see fit. I'm using [Tailwind.css](https://tailwindcss.com/) classes here. In my application, 
+I also used an SVG inside the button to apply the styles to. This article should just give a basic outline of how to add the styles.
 
-I also have used InertiaJs in my application, so you may have to adjust the `searchMethod` method to fit your application.
+I also have used [InertiaJs](https://inertiajs.com/) in my application, so you may have to adjust the `searchMethod` 
+method to fit how your application.
 
 Here is the entire component with the SpeechRecognition API added:
 
@@ -323,7 +324,7 @@ export default defineComponent({
 
 ## Conclusion
 At this point you should have a working search input in your page which listens for speech when the button is clicked,
-then automatically updates the search input with the spoken words.
+then automatically updates the search input with the spoken words, when speech has been recognized.
 
 I have certainly been enjoying how fast I can code out my ideas using VueJs and Tailwind as a starting point for my applications.
 I can reuse this component in any of my applications and it will work just fine. I hope you find this useful too.
