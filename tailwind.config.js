@@ -2,10 +2,14 @@ const defaults = require('tailwindcss/defaultTheme');
 
 module.exports = {
   darkMode: 'class',
-  content: require('fast-glob').sync([
-    'source/**/*.{blade.php,md,html,vue}'
-  ]),
-  safelist: [/language/, /mce/],
+  content: {
+    files: require('fast-glob').sync([
+      'source/**/*.{blade.php,md,html,vue}'
+    ]),
+    safelist: {
+      pattern: [/language/, /mce/]
+    },
+  },
   theme: {
     extend: {
       fontFamily: {
