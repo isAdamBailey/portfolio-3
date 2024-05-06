@@ -28,63 +28,51 @@ Here's the entire component where we left off in the previous article:
 
 ```vue
 <template>
-    <div class="w-full bg-white px-4 flex">
-        <label for="search" class="hidden">Search</label>
-        <input
-            id="search"
-            ref="search"
-            v-model="search"
-            class="transition h-10 w-full bg-gray-100 border border-gray-500 rounded-full focus:border-purple-400 outline-none cursor-pointer text-gray-700 px-4 pb-0 pt-px"
-            :class="{ 'transition-border': search }"
-            autocomplete="off"
-            name="search"
-            placeholder="Search"
-            type="search"
-            @keyup.esc="search = null"
-            @blur="search = null"
-        />
-    </div>
+  <div class="w-1/2 bg-white px-4 dark:bg-gray-800">
+    <label for="search" class="hidden">Search</label>
+    <input
+        id="search"
+        ref="searchRef"
+        v-model="search"
+        class="h-10 w-full cursor-pointer rounded-full border border-gray-500 bg-gray-100 px-4 pb-0 pt-px text-gray-700 outline-none transition focus:border-purple-400"
+        :class="{ 'transition-border': search }"
+        autocomplete="off"
+        name="search"
+        placeholder="Search"
+        type="search"
+        @keyup.esc="search = null"
+    />
+  </div>
 </template>
 
-<script>
-    import { defineComponent } from "vue";
-    import { usePage } from "@inertiajs/inertia-vue3";
-    
-    export default defineComponent({
-        props: {
-            // any route name from laravel routes (ideally index route is what you'd search through)
-            routeName: String,
-        },
-    
-        data() {
-            return {
-                // page.props.search will come from the backend after search has returned.
-                search: usePage().props.value?.search || null,
-            };
-        },
-    
-        watch: {
-            search() {
-                if (this.search) {
-                    // if you type something in the search input
-                    this.searchMethod();
-                } else {
-                    // else just give us the plain ol' paginated list
-                    this.$inertia.get(route(this.routeName));
-                }
-            },
-        },
-    
-        methods: {
-            searchMethod: _.debounce(function () {
-                this.$inertia.get(
-                    route(this.routeName),
-                    { search: this.search },
-                    { preserveState: true }
-                );
-            }, 500),
-        },
-    });
+<script setup>
+  import { ref, watch } from 'vue';
+  import { Inertia } from '@inertiajs/inertia';
+  import { debounce } from 'lodash';
+
+  const props = defineProps({
+    routeName: String,
+  });
+
+  let search = ref(null);
+  let sort = ref(null);
+  const searchRef = ref(null);
+
+  watch(search, () => {
+    if (search.value) {
+      searchMethod();
+    } else {
+      Inertia.get(route(props.routeName));
+    }
+  });
+
+  const searchMethod = debounce(() => {
+    Inertia.get(
+        route(props.routeName),
+        { search: search.value, sort: sort.value },
+        { preserveState: false }
+    );
+  }, 2000);
 </script>
 ```
 We have a:
@@ -108,25 +96,27 @@ Just below the input field, add a button:
 
 And in the `script` section, we add the `startVoiceRecognition` method we called in the template:
 
-```javascript
-startVoiceRecognition() {
-    const recognition = new (window.SpeechRecognition ||
-        window.webkitSpeechRecognition)();
-    recognition.interimResults = true;
-
-    recognition.addEventListener("result", (event) => {
-        let transcript = Array.from(event.results)
-            .map((result) => result[0])
-            .map((result) => result.transcript)
-            .join("");
-        
-        if (event.results[0].isFinal) {
-            this.search = transcript;
-        }
-    });
+```vue
+<script setup>
+    const startVoiceRecognition = () => {
+        const recognition = new (window.SpeechRecognition ||
+            window.webkitSpeechRecognition)();
+        recognition.interimResults = true;
     
-    recognition.start();
-},
+        recognition.addEventListener("result", (event) => {
+            let transcript = Array.from(event.results)
+                .map((result) => result[0])
+                .map((result) => result.transcript)
+                .join("");
+            
+            if (event.results[0].isFinal) {
+                this.search = transcript;
+            }
+        });
+        
+        recognition.start();
+    },
+</script>
 ```
 
 This method creates a new instance of the `SpeechRecognition` object, and sets the 
@@ -142,39 +132,59 @@ Since we don't yet have anything telling the user the input is listening, we can
 for toggling styles on the button.
 
 ```vue
-        data() {
-            return {
-                // page.props.search will come from the backend after search has returned.
-                search: usePage().props.value?.search || null,
-                listening: false, <!-- [tl! add] -->
-            };
-        },
+<script setup>
+  let search = ref(null);
+  let sort = ref(null);
+  const searchRef = ref(null);
+  const listening = ref(false); // [tl! add]
+</script>
 ```
 We will add event listeners for the `start` and `end` events of the SpeechRecognition API. Add this right before the
-`recogniotion.start()` method:
+`recognition.start()` method:
 
-```javascript
-// keep the voice active state in sync with the recognition state
-recognition.addEventListener("start", () => {
-    this.listening = true;
-});
+```vue
+<script setup>
+  const startVoiceRecognition = () => {
+    const recognition = new (window.SpeechRecognition ||
+        window.webkitSpeechRecognition)();
+    recognition.interimResults = true;
 
-recognition.addEventListener("end", () => {
-    this.listening = false;
-});
+    recognition.addEventListener("result", (event) => {
+      let transcript = Array.from(event.results)
+          .map((result) => result[0])
+          .map((result) => result.transcript)
+          .join("");
+      
+      if (event.results[0].isFinal) {
+        this.search = transcript;
+      }
+    });
+
+    // keep the voice active state in sync with the recognition state
+    recognition.addEventListener("start", () => { // [tl! add]
+      listening.value = true; // [tl! add]
+    }); // [tl! add]
+
+    recognition.addEventListener("end", () => { // [tl! add]
+      listening.value = false; // [tl! add]
+    }); // [tl! add]
+
+    recognition.start();
+  },
+</script>
 ```
 
 Now we can use the `listening` data property to toggle the input and button's styles:
 ```vue
 <input
     id="search"
-    ref="search"
+    ref="searchRef"
     v-model="search"
     class="h-8 w-full cursor-pointer rounded-full border border-blue-700 bg-gray-100 px-4 pb-0 pt-px text-gray-700 outline-none transition focus:border-blue-400"
     :class="{ 'border-red-500 border-2': listening }" <!-- [tl! add] -->
     autocomplete="off"
     name="search"
-    :placeholder="searchPlaceholder"
+    placeholder="Search"
     type="search"
     @keyup.esc="search = null"
 />
@@ -205,120 +215,97 @@ Here is the entire component with the SpeechRecognition API added:
 
 ```vue
 <template>
-    <div class="w-full px-2 bg-transparent flex">
-        <label for="search" class="hidden">Search</label>
-        <input
-            id="search"
-            ref="search"
-            v-model="search"
-            class="h-8 w-full cursor-pointer rounded-full border border-blue-700 bg-gray-100 px-4 pb-0 pt-px text-gray-700 outline-none transition focus:border-blue-400"
-            :class="{ 'border-red-500 border-2': listening }"
-            autocomplete="off"
-            name="search"
-            :placeholder="searchPlaceholder"
-            type="search"
-            @keyup.esc="search = null"
-        />
-        <button
-            :class="{
-                    'text-red-500': listening,
-                    'listening': !listening,
-                }"
-            @click="startVoiceRecognition"
-        >
-            Click to start voice recognition!
-        </button>
-    </div>
+  <div class="w-full px-2 bg-transparent flex">
+    <label for="search" class="hidden">Search</label>
+    <input
+        id="search"
+        ref="searchRef"
+        v-model="search"
+        class="h-8 w-full cursor-pointer rounded-full border border-blue-700 bg-gray-100 px-4 pb-0 pt-px text-gray-700 outline-none transition focus:border-blue-400"
+        :class="{ 'border-red-500 border-2': listening }"
+        autocomplete="off"
+        name="search"
+        placeholder="Search"
+        type="search"
+        @keyup.esc="search = null"
+    />
+    <button @click="startVoiceRecognition"
+            :class="{ 
+            'text-red-500': listening, 
+            'listening': !listening,
+        }"
+    >
+        Click to start voice recognition!
+    </button>
+  </div>
 </template>
 
-<script>
-import { defineComponent } from "vue";
-import { usePage } from "@inertiajs/inertia-vue3";
+<script setup>
+  import { ref, watch } from "vue";
+  import { Inertia } from '@inertiajs/inertia';
 
-export default defineComponent({
-    props: {
-        routeName: {
-            type: String,
-            required: true,
-        },
-        label: {
-            type: String,
-            default: null,
-        },
+  const props = defineProps({
+    routeName: {
+      type: String,
+      required: true,
     },
+  });
 
-    data() {
-        return {
-            search: usePage().props.value?.search || null,
-            listening: false,
-        };
-    },
+  let search = ref();
+  let listening = ref(false);
+  let searchRef = ref(null);
 
-    computed: {
-        typeName() {
-            return this.label || this.routeName.split(".")[0] || "something";
-        },
-        searchPlaceholder() {
-            return this.listening
-                ? "Listening..."
-                : `Search ${this.typeName}!`;
-        },
-    },
+  watch(search, () => {
+    if (search.value) {
+      searchMethod();
+    } else {
+      Inertia.get(route(props.routeName));
+    }
+  });
 
-    watch: {
-        search() {
-            if (this.search) {
-                this.searchMethod();
-            } else {
-                this.$inertia.get(route(this.routeName));
-            }
-        },
-    },
+  const searchMethod = _.debounce(function () {
+    Inertia.get(
+        route(props.routeName),
+        { search: search.value },
+        { preserveState: true }
+    );
+  }, 2000);
 
-    methods: {
-        searchMethod: _.debounce(function () {
-            this.$inertia.get(
-                route(this.routeName),
-                { search: this.search },
-                { preserveState: true }
-            );
-        }, 500),
+  const startVoiceRecognition = () => {
+    const recognition = new (window.SpeechRecognition ||
+        window.webkitSpeechRecognition)();
+    recognition.interimResults = true;
 
-        startVoiceRecognition() {
-            const recognition = new (window.SpeechRecognition ||
-                window.webkitSpeechRecognition)();
-            recognition.interimResults = true;
+    recognition.addEventListener("result", (event) => {
+      let transcript = Array.from(event.results)
+          .map((result) => result[0])
+          .map((result) => result.transcript)
+          .join("");
 
-            recognition.addEventListener("result", (event) => {
-                let transcript = Array.from(event.results)
-                    .map((result) => result[0])
-                    .map((result) => result.transcript)
-                    .join("");
+      if (event.results[0].isFinal) {
+        // Split the transcript into words, remove duplicates, and join back together
+        transcript = [...new Set(transcript.split(" "))].join(" ");
+        search.value = transcript;
+      }
+    });
 
-                if (event.results[0].isFinal) {
-                    this.search = transcript;
-                }
-            });
+    // keep the voice active state in sync with the recognition state
+    recognition.addEventListener("start", () => {
+      voiceActive.value = true;
+    });
 
-            // keep the voice active state in sync with the recognition state
-            recognition.addEventListener("start", () => {
-                this.listening = true;
-            });
+    recognition.addEventListener("end", () => {
+      voiceActive.value = false;
+    });
 
-            recognition.addEventListener("end", () => {
-                this.listening = false;
-            });
-
-            recognition.start();
-        },
-    },
-});
+    recognition.start();
+  };
 </script>
 
 <style scoped>
-.listening:active {
+  .listening:active {
     @apply text-red-500;
-}
+  }
 </style>
 ```
 
