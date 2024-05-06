@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Laravel Jetstream Search Input
-date: 2021-12-28
+date: 2023-12-28
 description: A simple search input for Laravel Jetstream and Inertia.
 keywords: laravel,laravel jetstream,inertia,search input,web development,software development
 categories: [laravel, vue]
@@ -80,18 +80,14 @@ Then on the Vue side, you receive the stories from the backend via a `stories` p
     </app-layout>
 </template>
 
-<script>
-    import { defineComponent } from "vue";
+<script setup>
     import AppLayout from "@/Layouts/AppLayout.vue";
     
-    export default defineComponent({
-        components: {
-            AppLayout,
-        },
-    
-        props: {
-            stories: Object,
-        },
+    defineProps({
+        stories: {
+          type: Object,
+          default: () => ({}),
+        }
     });
 </script>
 ```
@@ -107,62 +103,54 @@ Here's the entire component:
 
 ```vue
 <template>
-    <div class="w-1/2 bg-white px-4">
-        <label for="search" class="hidden">Search</label>
-        <input
-            id="search"
-            ref="search"
-            v-model="search"
-            class="transition h-10 w-full bg-gray-100 border border-gray-500 rounded-full focus:border-purple-400 outline-none cursor-pointer text-gray-700 px-4 pb-0 pt-px"
-            :class="{ 'transition-border': search }"
-            autocomplete="off"
-            name="search"
-            placeholder="Search"
-            type="search"
-            @keyup.esc="search = null"
-            @blur="search = null"
-        />
-    </div>
+  <div class="w-1/2 bg-white px-4 dark:bg-gray-800">
+    <label for="search" class="hidden">Search</label>
+    <input
+        id="search"
+        ref="searchRef"
+        v-model="search"
+        class="h-10 w-full cursor-pointer rounded-full border border-gray-500 bg-gray-100 px-4 pb-0 pt-px text-gray-700 outline-none transition focus:border-purple-400"
+        :class="{ 'transition-border': search }"
+        autocomplete="off"
+        name="search"
+        placeholder="Search"
+        type="search"
+        @keyup.esc="search = null"
+    />
+  </div>
 </template>
 
-<script>
-    import { defineComponent } from "vue";
-    
-    export default defineComponent({
-        props: {
-            // any route name from laravel routes (ideally index route is what you'd search through)
-            routeName: String,
-        },
-    
-        data() {
-            return {
-                // page.props.search will come from the backend after search has returned.
-                search: this.$inertia.page.props.search || null,
-            };
-        },
-    
-        watch: {
-            search() {
-                if (this.search) {
-                    // if you type something in the search input
-                    this.searchMethod();
-                } else {
-                    // else just give us the plain ol' paginated list - route('stories.index')
-                    this.$inertia.get(route(this.routeName));
-                }
-            },
-        },
-    
-        methods: {
-            searchMethod: _.debounce(function () {
-                this.$inertia.get(
-                    route(this.routeName),
-                    { search: this.search },
-                    { preserveState: true }
-                );
-            }, 500),
-        },
-    });
+<script setup>
+  import { ref, watch } from 'vue';
+  import { Inertia } from '@inertiajs/inertia';
+  import { debounce } from 'lodash';
+
+  const props = defineProps({
+    routeName: {
+        type: String,
+        required: true,
+    },
+  });
+
+  let search = ref(null);
+  let sort = ref(null);
+  const searchRef = ref(null);
+
+  watch(search, () => {
+    if (search.value) {
+      searchMethod();
+    } else {
+      Inertia.get(route(props.routeName));
+    }
+  });
+
+  const searchMethod = debounce(() => {
+    Inertia.get(
+        route(props.routeName),
+        { search: search.value, sort: sort.value },
+        { preserveState: false }
+    );
+  }, 2000);
 </script>
 ```
 We have a:
@@ -187,21 +175,15 @@ Use the new component in the header of your `Stories` page like so:
 And into the `script` area:
 
 ```vue
-<script>
-    import { defineComponent } from "vue";
+<script setup>
     import AppLayout from "@/Layouts/AppLayout.vue";
     // add below line to import component
-    import SearchInput from "@/Components/SearchInput"; // [tl! add]
+    import SearchInput from "@/Components/SearchInput.vue"; // [tl! add]
     
-    export default defineComponent({
-        components: {
-            // add below line to register component to template
-            SearchInput, // [tl! add]
-            AppLayout,
-        },
-    
-        props: {
-            stories: Object,
+    defineProps({
+        stories: {
+            type: Object,
+            default: () => ({}),
         },
     });
 </script>
