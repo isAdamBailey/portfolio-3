@@ -1,4 +1,5 @@
 ---
+
 extends: _layouts.post
 section: content
 title: Simple Vue.js and Tailwind.css Scroll To Top Button 
@@ -57,30 +58,26 @@ Go ahead and take some time to style this how you want it to look for your app.
 Let's add the script and some code for listening to the scroll event.
 
 ```vue
-<script>
-    import { defineComponent } from "vue";
-    
-    export default defineComponent({
-        mounted() {
-            window.addEventListener("scroll", this.handleScroll);
-        },
-    
-        beforeUnmount() {
-            window.removeEventListener("scroll", this.handleScroll);
-        },
-      
-        methods: {
-            handleScroll() {
-                const scrollBtn = this.$refs.scrollTopButton;
-    
-                if (window.scrollY > 0) {
-                    scrollBtn.classList.remove("invisible");
-                } else {
-                    scrollBtn.classList.add("invisible");
-                }
-            },
-        },
-    });
+<script setup>
+  import { onMounted, onUnmounted, ref } from "vue";
+
+  let scrollTopButton = ref(null);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      scrollTopButton.value.classList.remove("invisible");
+    } else {
+      scrollTopButton.value.classList.add("invisible");
+    }
+  };
+
+  onMounted(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll);
+  });
 </script>
 ```
 
@@ -108,7 +105,7 @@ at the top of the page.
 ## Scroll Click Event
 Now, we need to make the button actually scroll to the top when you click it!
 
-Add this method to trhe `methods` section of your script. It smoothly rolls the screen
+Add this function to your script. It smoothly rolls the screen
 back up to `window.scrollY = 0`, which would also make your button disappear.
 ```javascript
 scrollToTop() {
@@ -132,34 +129,28 @@ project.
 If you have [Lodash](https://lodash.com/) in your project, we could make use of the 
 `debounce` function to make the button appear after a timeout.
 
-Import debounce:
-```javascript
-import debounce from "lodash/debounce";
-```
+```vue
+<script setup>
+  import { onMounted, onUnmounted } from 'vue';
+  // Import debounce: [tl! add]
+  import debounce from "lodash/debounce"; // [tl! add]
 
-Set a data property to hold the method we will call in the listeners:
-```javascript
-data() {
-    return {
-        handleDebouncedScroll: null,
-    };
-},
-```
+  // Set a data property to hold the method we will call in the listeners: [tl! add]
+  let handleDebouncedScroll = ref(null); // [tl! add]
+  
+  onMounted(() => {
+    window.addEventListener("scroll", handleScroll); // [tl! remove]
+    // Apply the debounce method and listener to this data property: [tl! add]
+    handleDebouncedScroll = debounce(handleScroll, 100); // [tl! add]
+    window.addEventListener('scroll', handleDebouncedScroll); // [tl! add]
+  });
 
-Apply the debounce method and listener to this data property:
-```javascript
-    mounted() {
-        window.addEventListener("scroll", this.handleScroll); // [tl! remove]
-        this.handleDebouncedScroll = debounce(this.handleScroll, 100); // [tl! add]
-        window.addEventListener("scroll", this.handleDebouncedScroll); // [tl! add]
-    },
-```
-Remove listener from the debounced method instead:
-```javascript
-beforeUnmount() {
-    window.removeEventListener("scroll", this.handleScroll); // [tl! remove]
-    window.removeEventListener("scroll", this.handleDebouncedScroll);  // [tl! add]
-},
+  onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll); // [tl! remove]
+    // Remove listener from the debounced method instead: [tl! add]
+    window.removeEventListener('scroll', handleDebouncedScroll); // [tl! add]
+  });
+</script>
 ```
 
 And now, your button will appear 100 milliseconds after the `window.scrollY` limit 
