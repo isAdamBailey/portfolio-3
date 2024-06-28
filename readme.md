@@ -1,4 +1,3 @@
-# adambailey.io
 
 **discontinued June 2024**
 
